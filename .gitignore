@@ -1,0 +1,26 @@
+﻿
+worktrees/
+graphify-out/cache/
+
+
+# Mobile (Android/Kotlin)
+*.apk
+*.aab
+*.ap_
+*.dex
+build/
+.gradle/
+out/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.iml
+.idea/
+*.jks
+*.keystore
+!gradle/wrapper/gradle-wrapper.jar
+.env
+google-services.json
+.claude/settings.local.json
+.mcp.json
