@@ -1,4 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">GenovaMusicPlayer</string>
+    <string name="app_name">Genova Music</string>
+
+    <!-- Navigation -->
+    <string name="tab_music">Músicas</string>
+    <string name="tab_folders">Pastas</string>
+    <string name="cd_tab_music">Aba Músicas</string>
+    <string name="cd_tab_folders">Aba Pastas</string>
+
+    <!-- Library Screen -->
+    <string name="library_title">Músicas</string>
+    <string name="search_hint">Pesquisar músicas, artistas...</string>
+    <string name="filter_all">Todas</string>
+    <string name="filter_recent">Recentes</string>
+    <string name="library_subtitle_default">Memória interna • Áudio HD</string>
+    <string name="library_count_format">%1$d músicas</string>
+    <string name="action_shuffle_all">Aleatório</string>
+    <string name="library_empty_no_folders">Nenhuma pasta de música selecionada.\nAdicione uma pasta na aba Pastas para começar.</string>
+    <string name="library_empty_no_tracks">Nenhuma música encontrada nas pastas selecionadas.</string>
+    <string name="library_empty_search">Nenhuma música encontrada para a busca atual.</string>
+    <string name="library_go_to_folders">Gerenciar Pastas</string>
+    <string name="library_permission_required">Permissão de áudio necessária para listar suas músicas.</string>
+    <string name="library_grant_permission">Conceder Permissão</string>
+    <string name="menu_track_details">Ver detalhes do arquivo</string>
+    <string name="unknown_artist">Artista desconhecido</string>
+    <string name="unknown_album">Álbum desconhecido</string>
+
+    <!-- Track Details Dialog -->
+    <string name="details_title">Detalhes do arquivo</string>
+    <string name="details_close">Fechar</string>
+    <string name="details_format">Formato: %1$s</string>
+    <string name="details_bitrate">Taxa de bits: %1$s</string>
+    <string name="details_sample_rate">Taxa de amostragem: %1$s</string>
+    <string name="details_size">Tamanho: %1$s</string>
+    <string name="details_path">Caminho: %1$s</string>
+    <string name="details_not_available">Não informado</string>
+
+    <!-- Now Playing Screen -->
+    <string name="now_playing_title">Reproduzindo Agora</string>
+    <string name="badge_hifi">Hi-Fi Sem Perdas</string>
+    <string name="action_share">Compartilhar</string>
+    <string name="share_chooser_title">Compartilhar música</string>
+    <string name="audio_output_label">Saída de áudio</string>
+    <string name="audio_output_speaker">Alto-falante</string>
+    <string name="audio_output_wired">Fone com fio</string>
+    <string name="audio_output_bluetooth">Bluetooth</string>
+    <string name="action_switch_output">Trocar</string>
+    <string name="action_queue_next">Fila a Seguir</string>
+    <string name="action_view_lyrics">Ver Letra</string>
+    <string name="coming_soon_badge">Em breve</string>
+    <string name="coming_soon_toast">Disponível em breve</string>
+    <string name="time_zero">00:00</string>
+
+    <!-- Folders Screen -->
+    <string name="folders_title">Pastas</string>
+    <string name="folders_local_header">Diretórios Locais</string>
+    <string name="folders_synced_badge">Sincronizado</string>
+    <string name="folders_scope_description">Apenas músicas dentro das pastas autorizadas abaixo aparecem na sua biblioteca.</string>
+    <string name="action_add_folder">+ Adicionar Pasta (Seletor do Sistema)</string>
+    <string name="hierarchy_rule_title">Regra de Hierarquia</string>
+    <string name="hierarchy_rule_description">Pastas mãe englobam automaticamente suas subpastas. Subpastas redundantes são recusadas; ao adicionar uma pasta mãe, subpastas filhas são consolidadas.</string>
+    <string name="diag_scan_title">Status da Varredura</string>
+    <string name="diag_scan_never">Ainda não executada</string>
+    <string name="diag_scan_just_now">agora mesmo</string>
+    <string name="diag_scan_minutes_ago">há %1$d min</string>
+    <string name="diag_scan_hours_ago">há %1$d h</string>
+    <string name="diag_usage_title">Uso Total de Áudio</string>
+    <string name="diag_usage_format">%1$s / %2$d faixas</string>
+    <string name="folder_added_at">Adicionado em %1$s</string>
+    <string name="folders_empty">Nenhuma pasta autorizada ainda.\nToque em "+ Adicionar Pasta" para escolher um diretório.</string>
+    <string name="folder_remove_title">Remover pasta?</string>
+    <string name="folder_remove_message">A pasta "%1$s" deixará de ser exibida na biblioteca. Seus arquivos no aparelho não serão apagados.</string>
+    <string name="action_remove">Remover</string>
+    <string name="action_cancel">Cancelar</string>
+
+    <!-- Folder Validation Feedback -->
+    <string name="folder_added_success">Pasta adicionada: %1$s</string>
+    <string name="folder_added_consolidated">Pasta adicionada e %1$d subpasta(s) consolidada(s).</string>
+    <string name="folder_rejected_duplicate">Esta pasta já está na lista: %1$s</string>
+    <string name="folder_rejected_parent">Pasta já coberta pela pasta mãe: %1$s</string>
+    <string name="folder_rejected_invalid">Caminho de pasta inválido ou não suportado.</string>
+
+    <!-- Playback & Notification -->
+    <string name="notification_channel_name">Reprodução de Música</string>
+    <string name="notification_channel_desc">Controles de reprodução em segundo plano</string>
+    <string name="playback_error_generic">Não foi possível reproduzir esta faixa.</string>
+    <string name="playback_error_no_track">Nenhuma faixa selecionada.</string>
+
+    <!-- Accessibility Content Descriptions -->
+    <string name="cd_search_button">Focar campo de busca</string>
+    <string name="cd_clear_search">Limpar texto da busca</string>
+    <string name="cd_track_art">Capa do álbum da música</string>
+    <string name="cd_track_options">Opções da música</string>
+    <string name="cd_back">Voltar</string>
+    <string name="cd_now_playing_options">Detalhes técnicos da música</string>
+    <string name="cd_album_art_large">Capa do álbum em reprodução</string>
+    <string name="cd_share">Compartilhar música</string>
+    <string name="cd_seekbar">Barra de progresso da música</string>
+    <string name="cd_shuffle">Alternar modo aleatório</string>
+    <string name="cd_previous">Música anterior</string>
+    <string name="cd_play_pause">Reproduzir ou pausar</string>
+    <string name="cd_next">Próxima música</string>
+    <string name="cd_repeat">Alternar modo de repetição</string>
+    <string name="cd_remove_folder">Remover pasta autorizada</string>
 </resources>

@@ -1,16 +1,16 @@
-# Graph Report - GenovaMusicPlayer  (2026-11-21)
+# Graph Report - 001-mvp-part1-player  (2026-11-21)
 
 ## Corpus Check
-- 63 files · ~77,276 words
+- 84 files · ~84,605 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 544 nodes · 507 edges · 55 communities
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
+- 840 nodes · 1000 edges · 71 communities (68 shown, 3 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4cac7903`
+- Built from commit: `02efbe49`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -63,26 +63,51 @@
 - Specification Quality Checklist: MVP Parte 1 — Biblioteca, Busca, Tocando Agora e Pastas
 - [CHECKLIST TYPE] Checklist: [FEATURE NAME]
 - gradlew
+- LibraryActivity
+- PlaybackService
+- PlayerStateStore
+- NowPlayingActivity
+- FoldersViewModel
+- FoldersActivity
+- TrackListAdapter
+- .addFolder
+- FolderListAdapter
+- FolderHierarchyValidatorTest
+- .decodeSampledArt
+- FolderPathNormalizer
+- FolderPreferencesRepository
+- AuthorizedFolder
+- .render
+- TrackFilterEngineTest
 
 ## God Nodes (most connected - your core abstractions)
-1. `Tasks: [FEATURE NAME]` - 13 edges
-2. `Tasks: MVP Parte 1 — Biblioteca, Busca, Tocando Agora e Pastas` - 11 edges
-3. `Core Principles` - 8 edges
-4. `GenovaMusicPlayer — Instruções para Agentes de IA` - 8 edges
-5. `1. Entidades de Domínio (Kotlin Puro — sem `android.*`)` - 8 edges
-6. `Research & Technical Decisions: MVP Parte 1 — GenovaMusicPlayer` - 8 edges
-7. `Execution Steps` - 7 edges
-8. `4. Detection Passes (Token-Efficient Analysis)` - 7 edges
-9. `Execution Steps` - 7 edges
-10. `Execution Steps` - 7 edges
+1. `PlaybackService` - 30 edges
+2. `LibraryActivity` - 28 edges
+3. `PlayerStateStore` - 19 edges
+4. `FoldersActivity` - 18 edges
+5. `NowPlayingActivity` - 17 edges
+6. `LibraryViewModel` - 15 edges
+7. `Track` - 13 edges
+8. `Tasks: [FEATURE NAME]` - 13 edges
+9. `TrackListAdapter` - 12 edges
+10. `FoldersViewModel` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
-- None detected - all connections are within the same source files.
+- `FoldersActivity` --references--> `FolderPreferencesRepository`  [EXTRACTED]
+  app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/data/FolderPreferencesRepository.kt
+- `LibraryActivity` --references--> `FolderPreferencesRepository`  [EXTRACTED]
+  app/src/main/java/com/genova/musicplayer/ui/LibraryActivity.kt → app/src/main/java/com/genova/musicplayer/data/FolderPreferencesRepository.kt
+- `LibraryActivity` --references--> `MediaStoreTrackRepository`  [EXTRACTED]
+  app/src/main/java/com/genova/musicplayer/ui/LibraryActivity.kt → app/src/main/java/com/genova/musicplayer/data/MediaStoreTrackRepository.kt
+- `FoldersActivity` --references--> `FolderListAdapter`  [EXTRACTED]
+  app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/ui/FolderListAdapter.kt
+- `FoldersActivity` --references--> `FoldersViewModel`  [EXTRACTED]
+  app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/viewmodel/FoldersViewModel.kt
 
 ## Import Cycles
 - None detected.
 
-## Communities (55 total, 0 thin omitted)
+## Communities (71 total, 3 thin omitted)
 
 ### Community 0 - "Tasks: [FEATURE NAME]"
 Cohesion: 0.07
@@ -121,8 +146,8 @@ Cohesion: 0.23
 Nodes (13): Find-SpecifyRoot(), Format-SpecKitCommand(), Get-CurrentBranch(), Get-FeaturePathsEnv(), Get-InvokeSeparator(), Get-NormalizedPriority(), Get-Python3Command(), Get-RepoRoot() (+5 more)
 
 ### Community 9 - "GenovaMusicPlayer — Instruções para Agentes de IA"
-Cohesion: 0.13
-Nodes (13): Comandos, Convenções, Fluxo de especificação, GenovaMusicPlayer — Instruções para Agentes de IA, Propósito, Regras de operação, Restrições, Stack (+5 more)
+Cohesion: 0.12
+Nodes (14): Comandos, Convenções, Fluxo de especificação, GenovaMusicPlayer — Instruções para Agentes de IA, Propósito, Regras de operação, Restrições, Stack (+6 more)
 
 ### Community 10 - "Core Principles"
 Cohesion: 0.14
@@ -276,24 +301,77 @@ Nodes (4): [Category 1], [Category 2], [CHECKLIST TYPE] Checklist: [FEATURE NAME
 Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
+### Community 55 - "LibraryActivity"
+Cohesion: 0.05
+Nodes (33): LibraryFilter, deriveHiFi(), Boolean, Int, String, Track, List, String (+25 more)
+
+### Community 56 - "PlaybackService"
+Cohesion: 0.11
+Nodes (15): Boolean, Int, Intent, Long, String, PlaybackService, AudioFocusRequest, AudioManager (+7 more)
+
+### Community 57 - "PlayerStateStore"
+Cohesion: 0.08
+Nodes (11): PlaybackSession, PlayerStatus, RepeatMode, Boolean, Int, List, Long, String (+3 more)
+
+### Community 58 - "NowPlayingActivity"
+Cohesion: 0.14
+Nodes (11): Activity, Bundle, ImageButton, ImageView, Int, Long, String, TextView (+3 more)
+
+### Community 59 - "FoldersViewModel"
+Cohesion: 0.20
+Nodes (11): Added, FolderFeedback, FoldersUiState, FoldersViewModel, List, Long, String, Unit (+3 more)
+
+### Community 60 - "FoldersActivity"
+Cohesion: 0.17
+Nodes (9): MediaStoreTrackRepository, FoldersActivity, Activity, Boolean, Bundle, Int, Intent, ListView (+1 more)
+
+### Community 61 - "TrackListAdapter"
+Cohesion: 0.18
+Nodes (9): BaseAdapter, Int, List, Long, String, View, ViewGroup, TrackListAdapter (+1 more)
+
+### Community 62 - ".addFolder"
+Cohesion: 0.22
+Nodes (10): Added, FolderAdditionResult, RejectedCoveredByParent, RejectedDuplicate, RejectedInvalidPath, FolderHierarchyValidator, Boolean, List (+2 more)
+
+### Community 63 - "FolderListAdapter"
+Cohesion: 0.23
+Nodes (7): FolderListAdapter, BaseAdapter, Int, Long, View, ViewGroup, ViewHolder
+
+### Community 65 - ".decodeSampledArt"
+Cohesion: 0.33
+Nodes (6): AlbumArtCacheLoader, ImageView, Int, String, Bitmap, Context
+
+### Community 66 - "FolderPathNormalizer"
+Cohesion: 0.39
+Nodes (4): FolderPathNormalizer, Boolean, List, String
+
+### Community 67 - "FolderPreferencesRepository"
+Cohesion: 0.29
+Nodes (4): FolderPreferencesRepository, Long, String, Uri
+
+### Community 68 - "AuthorizedFolder"
+Cohesion: 0.29
+Nodes (4): List, List, AuthorizedFolder, List
+
 ## Knowledge Gaps
-- **395 isolated node(s):** `User Input`, `Pre-Execution Checks`, `Goal`, `Operating Constraints`, `1. Initialize Analysis Context` (+390 more)
+- **397 isolated node(s):** `PlayerStatus`, `User Input`, `Pre-Execution Checks`, `Goal`, `Operating Constraints` (+392 more)
   These have ≤1 connection - possible missing edges or undocumented components.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **What connects `User Input`, `Pre-Execution Checks`, `Goal` to the rest of the system?**
-  _395 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `Track` connect `LibraryActivity` to `AuthorizedFolder`, `PlaybackService`, `PlayerStateStore`, `FoldersViewModel`, `TrackListAdapter`?**
+  _High betweenness centrality (0.065) - this node is a cross-community bridge._
+- **Why does `AuthorizedFolder` connect `AuthorizedFolder` to `FolderHierarchyValidatorTest`, `FoldersActivity`, `.addFolder`, `FolderListAdapter`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Why does `LibraryActivity` connect `LibraryActivity` to `FolderPreferencesRepository`, `FoldersActivity`, `TrackListAdapter`?**
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **What connects `PlayerStatus`, `User Input`, `Pre-Execution Checks` to the rest of the system?**
+  _397 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Tasks: [FEATURE NAME]` be split into smaller, more focused modules?**
   _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `SKILL.md` be split into smaller, more focused modules?**
   _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
 - **Should `SKILL.md` be split into smaller, more focused modules?**
   _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
-- **Should `SKILL.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
-- **Should `Tasks: MVP Parte 1 — Biblioteca, Busca, Tocando Agora e Pastas` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
-- **Should `Execution Steps` be split into smaller, more focused modules?**
-  _Cohesion score 0.125 - nodes in this community are weakly interconnected._

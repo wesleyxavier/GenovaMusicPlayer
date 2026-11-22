@@ -53,5 +53,21 @@
   "51": "check-prerequisites.ps1",
   "52": "resolve-template.ps1",
   "53": "setup-plan.ps1",
-  "54": "setup-tasks.ps1"
+  "54": "setup-tasks.ps1",
+  "55": "LibraryActivity",
+  "56": "PlaybackService",
+  "57": "PlayerStateStore",
+  "58": "NowPlayingActivity",
+  "59": "FoldersViewModel",
+  "60": "FoldersActivity",
+  "61": "TrackListAdapter",
+  "62": ".addFolder",
+  "63": "FolderListAdapter",
+  "64": "FolderHierarchyValidatorTest",
+  "65": ".decodeSampledArt",
+  "66": "FolderPathNormalizer",
+  "67": "FolderPreferencesRepository",
+  "68": "AuthorizedFolder",
+  "69": ".render",
+  "70": "TrackFilterEngineTest"
 }

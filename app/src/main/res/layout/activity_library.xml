@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nv_surface"
+    android:orientation="vertical">
+
+    <!-- Top App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_music_note"
+            android:tint="@color/nv_primary" />
+
+        <TextView
+            style="@style/TextTitleLarge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="@string/library_title" />
+
+        <ImageButton
+            android:id="@+id/btn_focus_search"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_search_button"
+            android:padding="12dp"
+            android:src="@drawable/ic_search"
+            android:tint="@color/nv_on_surface" />
+    </LinearLayout>
+
+    <!-- Search Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_input_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_pill_surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="4dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_search"
+            android:tint="@color/nv_outline" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/nv_on_surface"
+            android:textColorHint="@color/nv_outline"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btn_clear_search"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_clear_search"
+            android:padding="12dp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/nv_on_surface_variant"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Filter Chips (Todas, Recentes) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chip_all"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/chip_height"
+            android:background="@drawable/bg_pill_primary"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:minWidth="80dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/filter_all"
+            android:textColor="@color/nv_on_primary_container"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/chip_recent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/chip_height"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill_surface"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:minWidth="88dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/filter_recent"
+            android:textColor="@color/nv_on_surface_variant"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Stats + Shuffle All -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_track_count"
+                style="@style/TextTitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 músicas" />
+
+            <TextView
+                style="@style/TextLabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/library_subtitle_default" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_shuffle_all"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="@drawable/bg_pill_primary"
+            android:drawableStart="@drawable/ic_shuffle"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="@string/action_shuffle_all"
+            android:textAllCaps="false"
+            android:textColor="@color/nv_on_primary_container"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Empty / Permission State -->
+    <LinearLayout
+        android:id="@+id/layout_empty_state"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_empty_message"
+            style="@style/TextBodyMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btn_empty_action"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_target_min"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_pill_primary"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textAllCaps="false"
+            android:textColor="@color/nv_on_primary_container"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Virtualized Track List -->
+    <ListView
+        android:id="@+id/list_tracks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:divider="@color/nv_transparent"
+        android:dividerHeight="2dp"
+        android:fastScrollEnabled="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp" />
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_nav_height"
+        android:background="@color/nv_surface_container_low"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tab_music"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/cd_tab_music"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_music_note"
+                android:tint="@color/nv_primary" />
+
+            <TextView
+                style="@style/TextLabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/tab_music"
+                android:textColor="@color/nv_primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_folders"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/cd_tab_folders"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_folder"
+                android:tint="@color/nv_outline" />
+
+            <TextView
+                style="@style/TextLabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/tab_folders"
+                android:textColor="@color/nv_outline" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
