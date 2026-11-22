@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/track_row_height"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingEnd="4dp">
+
+    <FrameLayout
+        android:layout_width="@dimen/track_thumb_size"
+        android:layout_height="@dimen/track_thumb_size">
+
+        <ImageView
+            android:id="@+id/iv_track_art"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_album_art_thumb"
+            android:clipToOutline="true"
+            android:contentDescription="@string/cd_track_art"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_note" />
+
+        <View
+            android:id="@+id/view_active_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_badge_hifi"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_track_title"
+            style="@style/TextTitleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_track_subtitle"
+            style="@style/TextLabelSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/nv_on_surface_variant"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_track_duration"
+        style="@style/TextLabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp" />
+
+    <ImageButton
+        android:id="@+id/btn_track_more"
+        android:layout_width="@dimen/touch_target_min"
+        android:layout_height="@dimen/touch_target_min"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_track_options"
+        android:focusable="false"
+        android:padding="12dp"
+        android:src="@drawable/ic_more_vert"
+        android:tint="@color/nv_on_surface_variant" />
+</LinearLayout>

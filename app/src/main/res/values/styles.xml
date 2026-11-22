@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GenovaMusicPlayer" parent="android:Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/nv_surface</item>
+        <item name="android:colorBackground">@color/nv_surface</item>
+        <item name="android:statusBarColor">@color/nv_surface</item>
+        <item name="android:navigationBarColor">@color/nv_surface_container_low</item>
+        <item name="android:textColorPrimary">@color/nv_on_surface</item>
+        <item name="android:textColorSecondary">@color/nv_on_surface_variant</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TextTitleLarge">
+        <item name="android:textColor">@color/nv_on_surface</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextTitleMedium">
+        <item name="android:textColor">@color/nv_on_surface</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextBodyMedium">
+        <item name="android:textColor">@color/nv_on_surface_variant</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextLabelSmall">
+        <item name="android:textColor">@color/nv_outline</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

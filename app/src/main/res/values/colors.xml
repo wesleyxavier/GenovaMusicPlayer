@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nocturne Violet Surface Hierarchy -->
+    <color name="nv_surface">#13121B</color>
+    <color name="nv_background">#13121B</color>
+    <color name="nv_surface_container_lowest">#0E0D16</color>
+    <color name="nv_surface_container_low">#1C1A24</color>
+    <color name="nv_surface_container">#201E28</color>
+    <color name="nv_surface_container_high">#2A2933</color>
+    <color name="nv_surface_container_highest">#35343E</color>
+
+    <!-- Primary Accents -->
+    <color name="nv_primary">#CEBDFF</color>
+    <color name="nv_primary_container">#9D7BFF</color>
+    <color name="nv_on_primary">#390094</color>
+    <color name="nv_on_primary_container">#320085</color>
+
+    <!-- Text & Outlines -->
+    <color name="nv_on_surface">#E5E0EE</color>
+    <color name="nv_on_surface_variant">#CBC3D5</color>
+    <color name="nv_outline">#948E9F</color>
+    <color name="nv_outline_subtle">#2E2C3A</color>
+
+    <!-- Semantic -->
+    <color name="nv_error">#FFB4AB</color>
+    <color name="nv_error_container">#4A1C1A</color>
+    <color name="nv_success">#8BE9A8</color>
+    <color name="nv_glow_lavender">#339D7BFF</color>
+    <color name="nv_transparent">#00000000</color>
+</resources>
