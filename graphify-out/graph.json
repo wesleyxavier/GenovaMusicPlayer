@@ -4503,7 +4503,7 @@
       "label": "Conven\u00e7\u00f5es",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L30",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "agents_conven\u00e7\u00f5es",
       "community": 9,
@@ -4513,7 +4513,7 @@
       "label": "Restri\u00e7\u00f5es",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L35",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "agents_restri\u00e7\u00f5es",
       "community": 9,
@@ -9627,7 +9627,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "source": "agents_genovamusicplayer_instru\u00e7\u00f5es_para_agentes_de_ia",
       "target": "agents_conven\u00e7\u00f5es",
@@ -9667,7 +9667,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "AGENTS.md",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "source": "agents_genovamusicplayer_instru\u00e7\u00f5es_para_agentes_de_ia",
       "target": "agents_restri\u00e7\u00f5es",
@@ -10534,5 +10534,6 @@
       "confidence_score": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "4cac7903201eb16a3340681a3caf5c3702bf061c"
 }

@@ -26,6 +26,7 @@ Player de música nativo Android em Kotlin puro, offline-only, com seleção exp
 
 ## Fluxo de especificação
 - **Spec Kit** (`.specify/` e `specs/`), regido por `.specify/memory/constitution.md`.
+- **Worktree (`openspec-worktree`)**: todo `tasks.md` deve iniciar com `## 0. Branch` criando worktree em `worktrees/{branch}/` (branches `feature/`, `bugfix/` ou `hotfix/`), validando a branch base (`develop` ou feature anterior) antes de criar e removendo o worktree após o merge.
 
 ## Convenções
 - Arquitetura MVVM pura (sem AndroidX, LiveData ou Flow); estado global do player em singleton com callbacks.
