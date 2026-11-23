@@ -65,6 +65,9 @@ class FoldersActivity : Activity() {
         findViewById<View>(R.id.tab_music).setOnClickListener {
             navigateToLibrary(focusSearch = false)
         }
+        findViewById<View>(R.id.tab_playlists).setOnClickListener {
+            navigateToPlaylists()
+        }
 
         viewModel.onStateChanged = { state ->
             render(state)
@@ -189,6 +192,14 @@ class FoldersActivity : Activity() {
         } else {
             String.format(Locale.US, "%.1f MB", mb)
         }
+    }
+
+    private fun navigateToPlaylists() {
+        val intent = Intent(this, PlaylistsActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        }
+        startActivity(intent)
+        overridePendingTransition(0, 0)
     }
 
     private fun navigateToLibrary(focusSearch: Boolean) {

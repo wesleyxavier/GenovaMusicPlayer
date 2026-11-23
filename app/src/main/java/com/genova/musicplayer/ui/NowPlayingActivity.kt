@@ -7,9 +7,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.provider.Settings
 import android.view.View
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.SeekBar
@@ -39,7 +37,6 @@ class NowPlayingActivity : Activity() {
     private lateinit var btnPlayPause: ImageButton
     private lateinit var btnRepeat: ImageButton
     private lateinit var dotRepeat: View
-    private lateinit var tvAudioOutput: TextView
 
     private val mainHandler = Handler(Looper.getMainLooper())
     private var isUserSeeking = false
@@ -73,7 +70,6 @@ class NowPlayingActivity : Activity() {
         btnPlayPause = findViewById(R.id.btn_play_pause)
         btnRepeat = findViewById(R.id.btn_repeat)
         dotRepeat = findViewById(R.id.dot_repeat)
-        tvAudioOutput = findViewById(R.id.tv_audio_output)
 
         findViewById<ImageButton>(R.id.btn_back).setOnClickListener { finish() }
         findViewById<ImageButton>(R.id.btn_now_playing_more).setOnClickListener {
@@ -94,10 +90,6 @@ class NowPlayingActivity : Activity() {
             dispatchServiceAction(PlaybackService.ACTION_NEXT)
         }
         btnRepeat.setOnClickListener { dispatchServiceAction(PlaybackService.ACTION_CYCLE_REPEAT) }
-
-        findViewById<Button>(R.id.btn_switch_output).setOnClickListener {
-            startActivity(Intent(Settings.ACTION_BLUETOOTH_SETTINGS))
-        }
 
         findViewById<View>(R.id.btn_queue_placeholder).setOnClickListener {
             Toast.makeText(this, R.string.coming_soon_toast, Toast.LENGTH_SHORT).show()
@@ -197,8 +189,6 @@ class NowPlayingActivity : Activity() {
                 dotRepeat.visibility = View.VISIBLE
             }
         }
-
-        tvAudioOutput.text = session.audioOutputName
     }
 
     private fun dispatchServiceAction(action: String) {

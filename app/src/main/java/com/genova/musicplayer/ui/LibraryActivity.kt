@@ -22,9 +22,11 @@ import android.widget.LinearLayout
 import android.widget.ListView
 import android.widget.PopupMenu
 import android.widget.TextView
+import android.widget.Toast
 import com.genova.musicplayer.R
 import com.genova.musicplayer.data.FolderPreferencesRepository
 import com.genova.musicplayer.data.MediaStoreTrackRepository
+import com.genova.musicplayer.data.PlaylistPreferencesRepository
 import com.genova.musicplayer.domain.library.LibraryFilter
 import com.genova.musicplayer.domain.library.Track
 import com.genova.musicplayer.domain.player.PlaybackSession
@@ -33,6 +35,8 @@ import com.genova.musicplayer.domain.player.PlayerStatus
 import com.genova.musicplayer.service.PlaybackService
 import com.genova.musicplayer.viewmodel.LibraryUiState
 import com.genova.musicplayer.viewmodel.LibraryViewModel
+import com.genova.musicplayer.viewmodel.PlaylistFeedback
+import com.genova.musicplayer.viewmodel.PlaylistsViewModel
 import java.util.Locale
 import java.util.concurrent.Executors
 
@@ -123,6 +127,9 @@ class LibraryActivity : Activity() {
             }
         }
 
+        findViewById<View>(R.id.tab_playlists).setOnClickListener {
+            navigateToPlaylists()
+        }
         findViewById<View>(R.id.tab_folders).setOnClickListener {
             navigateToFolders()
         }
@@ -265,16 +272,75 @@ class LibraryActivity : Activity() {
 
     private fun showTrackContextMenu(track: Track, anchor: View) {
         val popup = PopupMenu(this, anchor)
-        popup.menu.add(0, MENU_DETAILS, 0, R.string.menu_track_details)
+        popup.menu.add(0, MENU_ADD_TO_PLAYLIST, 0, R.string.menu_add_to_playlist)
+        popup.menu.add(0, MENU_DETAILS, 1, R.string.menu_track_details)
         popup.setOnMenuItemClickListener { item ->
-            if (item.itemId == MENU_DETAILS) {
-                showTrackDetailsDialog(track)
-                true
-            } else {
-                false
+            when (item.itemId) {
+                MENU_ADD_TO_PLAYLIST -> {
+                    showAddToPlaylistDialog(track)
+                    true
+                }
+                MENU_DETAILS -> {
+                    showTrackDetailsDialog(track)
+                    true
+                }
+                else -> false
             }
         }
         popup.show()
+    }
+
+    private fun showAddToPlaylistDialog(track: Track) {
+        val playlistsViewModel = PlaylistsViewModel(PlaylistPreferencesRepository(this))
+        playlistsViewModel.loadPlaylists()
+        val playlists = playlistsViewModel.getState().playlists
+        val labels = playlists.map { it.name } + getString(R.string.dialog_new_playlist_option)
+
+        AlertDialog.Builder(this)
+            .setTitle(R.string.dialog_choose_playlist_title)
+            .setItems(labels.toTypedArray()) { _, which ->
+                if (which < playlists.size) {
+                    val chosen = playlists[which]
+                    playlistsViewModel.addTrackToPlaylist(chosen.id, track.id)
+                    Toast.makeText(
+                        this,
+                        getString(R.string.playlist_track_added, chosen.name),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                } else {
+                    val input = EditText(this).apply {
+                        hint = getString(R.string.playlist_name_hint)
+                    }
+                    AlertDialog.Builder(this)
+                        .setTitle(R.string.playlist_create_title)
+                        .setView(input)
+                        .setPositiveButton(R.string.action_create) { _, _ ->
+                            val created = playlistsViewModel.createPlaylist(input.text.toString())
+                            if (created != null) {
+                                playlistsViewModel.addTrackToPlaylist(created.id, track.id)
+                                Toast.makeText(
+                                    this,
+                                    getString(R.string.playlist_track_added, created.name),
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            } else {
+                                val feedbackMsg = when (val fb = playlistsViewModel.getState().feedback) {
+                                    PlaylistFeedback.EmptyName -> getString(R.string.playlist_error_empty_name)
+                                    is PlaylistFeedback.DuplicateName -> {
+                                        getString(R.string.playlist_error_duplicate_name, fb.name)
+                                    }
+                                    else -> null
+                                }
+                                if (feedbackMsg != null) {
+                                    Toast.makeText(this, feedbackMsg, Toast.LENGTH_SHORT).show()
+                                }
+                            }
+                        }
+                        .setNegativeButton(R.string.action_cancel, null)
+                        .show()
+                }
+            }
+            .show()
     }
 
     private fun showTrackDetailsDialog(track: Track) {
@@ -337,6 +403,14 @@ class LibraryActivity : Activity() {
         requestPermissions(arrayOf(permission), REQUEST_AUDIO_PERMISSION)
     }
 
+    private fun navigateToPlaylists() {
+        val intent = Intent(this, PlaylistsActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        }
+        startActivity(intent)
+        overridePendingTransition(0, 0)
+    }
+
     private fun navigateToFolders() {
         val intent = Intent(this, FoldersActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
@@ -349,5 +423,6 @@ class LibraryActivity : Activity() {
         const val EXTRA_FOCUS_SEARCH = "extra_focus_search"
         private const val REQUEST_AUDIO_PERMISSION = 2001
         private const val MENU_DETAILS = 1
+        private const val MENU_ADD_TO_PLAYLIST = 2
     }
 }

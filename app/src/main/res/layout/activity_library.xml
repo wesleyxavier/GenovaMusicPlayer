@@ -258,6 +258,34 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tab_playlists"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/cd_tab_playlists"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_queue"
+                android:tint="@color/nv_outline" />
+
+            <TextView
+                style="@style/TextLabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/tab_playlists"
+                android:textColor="@color/nv_outline" />
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/tab_folders"
             android:layout_width="0dp"
             android:layout_height="match_parent"

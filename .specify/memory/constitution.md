@@ -1,9 +1,9 @@
 <!--
 Sync Impact Report
-- Version change: template (unratified) -> 1.0.0
-- Modified principles: Initial ratification of Principles I through VII from author's constitution
-- Added sections: Padrões de Desempenho; Qualidade, Testes e Fluxo de Trabalho; Governance; Histórico de Emendas
-- Removed sections: None (all template placeholders replaced)
+- Version change: 1.0.0 -> 1.0.1
+- Modified principles: IV. Biblioteca de Músicas e Regra de Hierarquia de Pastas (clarificação de exibição na UI)
+- Added sections: None
+- Removed sections: None
 - Follow-up TODOs: None
 -->
 # GenovaMusicPlayer (Player de Música Android) Constitution
@@ -42,6 +42,7 @@ A seleção de músicas DEVE respeitar a privacidade e a hierarquia de diretóri
 - **Regra de hierarquia obrigatória:** nunca manter duas pastas em relação de ancestral e descendente:
   - Ao tentar adicionar uma pasta contida em outra já incluída, a operação DEVE ser recusada com mensagem clara em português.
   - Ao adicionar uma pasta que contém outras já incluídas, as pastas filhas DEVEM ser removidas automaticamente.
+  - A regra de hierarquia NÃO DEVE ser exibida permanentemente na tela; ela atua como validação interna, exibindo aviso em português apenas quando o usuário tentar realizar uma operação inválida.
 - Caminhos DEVEM ser normalizados e comparados por segmentos completos (ex.: `/Music2` NÃO é subpasta de `/Music`).
 - A validação de pastas NÃO DEVE depender do Android e DEVE possuir testes unitários cobrindo obrigatoriamente: pasta igual, filha, mãe, irmã, prefixo de texto, barra final e caminho vazio.
 
@@ -96,5 +97,6 @@ O código DEVE manter apenas o necessário para cumprir a especificação vigent
 ### Histórico de Emendas
 
 - **2026-11-21 (v1.0.0):** Ratificação inicial da constituição do projeto pelo autor Wesley Xavier De Oliveira Monteiro.
+- **2026-11-22 (v1.0.1):** Esclarecimento no Princípio IV pelo autor: a regra de hierarquia de pastas permanece oculta na UI por padrão, exibindo aviso apenas quando houver tentativa inválida.
 
-**Version**: 1.0.0 | **Ratified**: 2026-11-21 | **Last Amended**: 2026-11-21
+**Version**: 1.0.1 | **Ratified**: 2026-11-21 | **Last Amended**: 2026-11-22

@@ -1,16 +1,16 @@
-# Graph Report - 001-mvp-part1-player  (2026-11-21)
+# Graph Report - 002-mvp-part2-playlists-and-refinements  (2026-11-22)
 
 ## Corpus Check
-- 84 files · ~84,605 words
+- 101 files · ~91,455 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 840 nodes · 1000 edges · 71 communities (68 shown, 3 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
+- 1019 nodes · 1275 edges · 81 communities (77 shown, 4 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `02efbe49`
+- Built from commit: `b3a48567`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -79,35 +79,45 @@
 - AuthorizedFolder
 - .render
 - TrackFilterEngineTest
+- Playlist
+- PlaylistsViewModel
+- Tasks: MVP Parte 2 — Playlists e Refinamentos
+- User Scenarios & Testing *(mandatory)*
+- Implementation Plan: MVP Parte 2 — Playlists e Refinamentos
+- Data Model: MVP Parte 2 — Playlists e Refinamentos
+- Research & Technical Decisions: MVP Parte 2 — Playlists e Refinamentos
+- Specification Quality Checklist: MVP Parte 2 — Playlists e Refinamentos
+- Quickstart & Validation Guide: MVP Parte 2 — Playlists e Refinamentos
+- UI & Architecture Contracts: MVP Parte 2 — Playlists e Refinamentos
 
 ## God Nodes (most connected - your core abstractions)
 1. `PlaybackService` - 30 edges
-2. `LibraryActivity` - 28 edges
-3. `PlayerStateStore` - 19 edges
-4. `FoldersActivity` - 18 edges
-5. `NowPlayingActivity` - 17 edges
-6. `LibraryViewModel` - 15 edges
-7. `Track` - 13 edges
-8. `Tasks: [FEATURE NAME]` - 13 edges
-9. `TrackListAdapter` - 12 edges
-10. `FoldersViewModel` - 12 edges
+2. `LibraryActivity` - 30 edges
+3. `PlaylistDetailActivity` - 22 edges
+4. `Playlist` - 21 edges
+5. `PlayerStateStore` - 19 edges
+6. `FoldersActivity` - 19 edges
+7. `Track` - 18 edges
+8. `PlaylistsViewModel` - 18 edges
+9. `NowPlayingActivity` - 17 edges
+10. `PlaylistsActivity` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `FoldersActivity` --references--> `FolderPreferencesRepository`  [EXTRACTED]
   app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/data/FolderPreferencesRepository.kt
 - `LibraryActivity` --references--> `FolderPreferencesRepository`  [EXTRACTED]
   app/src/main/java/com/genova/musicplayer/ui/LibraryActivity.kt → app/src/main/java/com/genova/musicplayer/data/FolderPreferencesRepository.kt
+- `PlaylistDetailActivity` --references--> `FolderPreferencesRepository`  [EXTRACTED]
+  app/src/main/java/com/genova/musicplayer/ui/PlaylistDetailActivity.kt → app/src/main/java/com/genova/musicplayer/data/FolderPreferencesRepository.kt
+- `FoldersActivity` --references--> `MediaStoreTrackRepository`  [EXTRACTED]
+  app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/data/MediaStoreTrackRepository.kt
 - `LibraryActivity` --references--> `MediaStoreTrackRepository`  [EXTRACTED]
   app/src/main/java/com/genova/musicplayer/ui/LibraryActivity.kt → app/src/main/java/com/genova/musicplayer/data/MediaStoreTrackRepository.kt
-- `FoldersActivity` --references--> `FolderListAdapter`  [EXTRACTED]
-  app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/ui/FolderListAdapter.kt
-- `FoldersActivity` --references--> `FoldersViewModel`  [EXTRACTED]
-  app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/viewmodel/FoldersViewModel.kt
 
 ## Import Cycles
 - None detected.
 
-## Communities (71 total, 3 thin omitted)
+## Communities (81 total, 4 thin omitted)
 
 ### Community 0 - "Tasks: [FEATURE NAME]"
 Cohesion: 0.07
@@ -302,8 +312,8 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 55 - "LibraryActivity"
-Cohesion: 0.05
-Nodes (33): LibraryFilter, deriveHiFi(), Boolean, Int, String, Track, List, String (+25 more)
+Cohesion: 0.07
+Nodes (23): LibraryFilter, Activity, Boolean, Bundle, Button, ImageButton, Int, Intent (+15 more)
 
 ### Community 56 - "PlaybackService"
 Cohesion: 0.11
@@ -322,20 +332,20 @@ Cohesion: 0.20
 Nodes (11): Added, FolderFeedback, FoldersUiState, FoldersViewModel, List, Long, String, Unit (+3 more)
 
 ### Community 60 - "FoldersActivity"
-Cohesion: 0.17
-Nodes (9): MediaStoreTrackRepository, FoldersActivity, Activity, Boolean, Bundle, Int, Intent, ListView (+1 more)
+Cohesion: 0.19
+Nodes (8): FoldersActivity, Activity, Boolean, Bundle, Int, Intent, ListView, TextView
 
 ### Community 61 - "TrackListAdapter"
-Cohesion: 0.18
-Nodes (9): BaseAdapter, Int, List, Long, String, View, ViewGroup, TrackListAdapter (+1 more)
+Cohesion: 0.05
+Nodes (30): deriveHiFi(), Boolean, Int, String, Track, List, String, TrackFilterEngine (+22 more)
 
 ### Community 62 - ".addFolder"
 Cohesion: 0.22
 Nodes (10): Added, FolderAdditionResult, RejectedCoveredByParent, RejectedDuplicate, RejectedInvalidPath, FolderHierarchyValidator, Boolean, List (+2 more)
 
 ### Community 63 - "FolderListAdapter"
-Cohesion: 0.23
-Nodes (7): FolderListAdapter, BaseAdapter, Int, Long, View, ViewGroup, ViewHolder
+Cohesion: 0.19
+Nodes (8): FolderListAdapter, BaseAdapter, Int, List, Long, View, ViewGroup, ViewHolder
 
 ### Community 65 - ".decodeSampledArt"
 Cohesion: 0.33
@@ -346,32 +356,68 @@ Cohesion: 0.39
 Nodes (4): FolderPathNormalizer, Boolean, List, String
 
 ### Community 67 - "FolderPreferencesRepository"
-Cohesion: 0.29
-Nodes (4): FolderPreferencesRepository, Long, String, Uri
+Cohesion: 0.21
+Nodes (6): FolderPreferencesRepository, List, Long, String, AuthorizedFolder, Uri
 
-### Community 68 - "AuthorizedFolder"
+### Community 71 - "Playlist"
+Cohesion: 0.19
+Nodes (8): BaseAdapter, Int, List, Long, View, ViewGroup, PlaylistListAdapter, ViewHolder
+
+### Community 72 - "PlaylistsViewModel"
+Cohesion: 0.05
+Nodes (32): List, PlaylistPreferencesRepository, Playlist, List, Long, String, PlaylistManager, DuplicateName (+24 more)
+
+### Community 73 - "Tasks: MVP Parte 2 — Playlists e Refinamentos"
+Cohesion: 0.13
+Nodes (14): 0. Branch, 3.1 Commit Group 1, 5.1 Commit Group 2, Dependencies & Execution Order, Format: `[ID] [P?] [Story] Description`, Implementation for User Story 2, Phase 1: Foundational (Textos & Navegação Compartilhada), Phase 2: User Story 1 - Executar Música ao Clicar na Lista (Priority: P1) 🎯 MVP (+6 more)
+
+### Community 74 - "User Scenarios & Testing *(mandatory)*"
+Cohesion: 0.14
+Nodes (13): Assumptions, Edge Cases, Feature Specification: MVP Parte 2 — Playlists e Refinamentos de Navegação e Pastas, Functional Requirements, Key Entities, Measurable Outcomes, Requirements *(mandatory)*, Success Criteria *(mandatory)* (+5 more)
+
+### Community 75 - "Implementation Plan: MVP Parte 2 — Playlists e Refinamentos"
+Cohesion: 0.22
+Nodes (8): Complexity Tracking, Constitution Check, Documentation (this feature), Implementation Plan: MVP Parte 2 — Playlists e Refinamentos, Project Structure, Source Code (repository root), Summary, Technical Context
+
+### Community 76 - "Data Model: MVP Parte 2 — Playlists e Refinamentos"
 Cohesion: 0.29
-Nodes (4): List, List, AuthorizedFolder, List
+Nodes (6): 1. Entidades de Domínio (Kotlin Puro — sem `android.*`), 2. Regras de Negócio (`PlaylistManager`), 3. Persistência Local, Data Model: MVP Parte 2 — Playlists e Refinamentos, `Playlist`, `PlaylistValidationResult` (Sealed Class)
+
+### Community 77 - "Research & Technical Decisions: MVP Parte 2 — Playlists e Refinamentos"
+Cohesion: 0.29
+Nodes (6): 1. Domínio de Playlists em Kotlin Puro, 2. Persistência Local de Playlists sem Bibliotecas Externas, 3. Navegação Inferior e Pontos de Entrada de Playlists, 4. Saída de Áudio Ativa sem Troca Manual, 5. Ocultação da Regra de Hierarquia na Tela de Pastas, Research & Technical Decisions: MVP Parte 2 — Playlists e Refinamentos
+
+### Community 78 - "Specification Quality Checklist: MVP Parte 2 — Playlists e Refinamentos"
+Cohesion: 0.33
+Nodes (5): Content Quality, Feature Readiness, Notes, Requirement Completeness, Specification Quality Checklist: MVP Parte 2 — Playlists e Refinamentos
+
+### Community 79 - "Quickstart & Validation Guide: MVP Parte 2 — Playlists e Refinamentos"
+Cohesion: 0.33
+Nodes (5): 1. Testes Unitários JVM (Via Docker), 2. Build APK Debug (Via Docker), 3. Validação Manual no Dispositivo, Cenários Obrigatórios Validados (`PlaylistManagerTest`), Quickstart & Validation Guide: MVP Parte 2 — Playlists e Refinamentos
+
+### Community 80 - "UI & Architecture Contracts: MVP Parte 2 — Playlists e Refinamentos"
+Cohesion: 0.40
+Nodes (4): 1. Refinamentos nas Telas Existentes, 2. Novas Telas e Contratos de Playlists, 3. Contratos Internos, UI & Architecture Contracts: MVP Parte 2 — Playlists e Refinamentos
 
 ## Knowledge Gaps
-- **397 isolated node(s):** `PlayerStatus`, `User Input`, `Pre-Execution Checks`, `Goal`, `Operating Constraints` (+392 more)
+- **442 isolated node(s):** `PlayerStatus`, `User Input`, `Pre-Execution Checks`, `Goal`, `Operating Constraints` (+437 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Track` connect `LibraryActivity` to `AuthorizedFolder`, `PlaybackService`, `PlayerStateStore`, `FoldersViewModel`, `TrackListAdapter`?**
-  _High betweenness centrality (0.065) - this node is a cross-community bridge._
-- **Why does `AuthorizedFolder` connect `AuthorizedFolder` to `FolderHierarchyValidatorTest`, `FoldersActivity`, `.addFolder`, `FolderListAdapter`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `LibraryActivity` connect `LibraryActivity` to `FolderPreferencesRepository`, `FoldersActivity`, `TrackListAdapter`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `Track` connect `TrackListAdapter` to `AuthorizedFolder`, `LibraryActivity`, `PlaybackService`, `PlayerStateStore`, `FoldersViewModel`?**
+  _High betweenness centrality (0.082) - this node is a cross-community bridge._
+- **Why does `PlaylistDetailActivity` connect `TrackListAdapter` to `PlaylistsViewModel`, `FolderPreferencesRepository`, `AuthorizedFolder`?**
+  _High betweenness centrality (0.047) - this node is a cross-community bridge._
+- **Why does `LibraryActivity` connect `LibraryActivity` to `FolderPreferencesRepository`, `AuthorizedFolder`, `TrackListAdapter`?**
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Are the 4 inferred relationships involving `Playlist` (e.g. with `.`addTrackToPlaylist avoids duplicates and removeTrackFromPlaylist preserves order`()` and `.`createPlaylist rejects duplicate name ignoring case and whitespace`()`) actually correct?**
+  _`Playlist` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `PlayerStatus`, `User Input`, `Pre-Execution Checks` to the rest of the system?**
-  _397 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _442 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Tasks: [FEATURE NAME]` be split into smaller, more focused modules?**
   _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
-- **Should `SKILL.md` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
 - **Should `SKILL.md` be split into smaller, more focused modules?**
   _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
