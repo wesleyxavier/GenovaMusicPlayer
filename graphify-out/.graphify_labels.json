@@ -79,5 +79,8 @@
   "77": "Research & Technical Decisions: MVP Parte 2 — Playlists e Refinamentos",
   "78": "Specification Quality Checklist: MVP Parte 2 — Playlists e Refinamentos",
   "79": "Quickstart & Validation Guide: MVP Parte 2 — Playlists e Refinamentos",
-  "80": "UI & Architecture Contracts: MVP Parte 2 — Playlists e Refinamentos"
+  "80": "UI & Architecture Contracts: MVP Parte 2 — Playlists e Refinamentos",
+  "81": "Implementation Plan: Infraestrutura E2E Appium, Logo do APK e Diretriz GitHub MCP",
+  "82": "Research & Technical Decisions: 003-e2e-appium-and-apk-logo",
+  "83": "test_smoke_screens.py"
 }

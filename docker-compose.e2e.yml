@@ -1,0 +1,27 @@
+services:
+  appium:
+    image: appium/appium:latest
+    container_name: genova-appium
+    ports:
+      - "4723:4723"
+    environment:
+      - ANDROID_ADB_SERVER_ADDRESS=host.docker.internal
+      - ANDROID_ADB_SERVER_PORT=5037
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./app/build/outputs/apk/debug:/apk:ro
+
+  e2e-runner:
+    build:
+      context: ./e2e
+      dockerfile: Dockerfile
+    depends_on:
+      - appium
+    environment:
+      - APPIUM_SERVER_URL=http://appium:4723
+      - APP_PACKAGE=com.genova.musicplayer
+      - APP_ACTIVITY=com.genova.musicplayer.ui.LibraryActivity
+      - APK_PATH=/apk/app-debug.apk
+    volumes:
+      - ./e2e:/e2e

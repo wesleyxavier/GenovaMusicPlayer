@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report
-- Version change: 1.0.0 -> 1.0.1
-- Modified principles: IV. Biblioteca de Músicas e Regra de Hierarquia de Pastas (clarificação de exibição na UI)
-- Added sections: None
+- Version change: 1.0.1 -> 1.1.0
+- Modified principles: I (exceção isolada para dependências E2E em container), VI (logo oficial do APK)
+- Added guidance: Testes E2E com Appium (docker-compose.e2e.yml + execução obrigatória via subagentes appium-test-*) e diretriz de MCP do GitHub em AGENTS.md
 - Removed sections: None
 - Follow-up TODOs: None
 -->
@@ -15,6 +15,7 @@ Sync Impact Report
 O aplicativo DEVE ser exclusivamente Android, escrito em Kotlin, utilizando apenas o framework Android padrão e a biblioteca padrão do Kotlin. Nenhuma biblioteca de terceiros é permitida, incluindo AndroidX, Material Components, Jetpack Compose, RecyclerView ou Media3.
 
 - Qualquer exceção a esta regra exige aprovação explícita do autor registrada nesta constituição, contendo justificativa, tamanho estimado e licença.
+  - **Exceção aprovada (2026-11-22):** dependências de automação Appium necessárias exclusivamente para os testes E2E no módulo isolado `e2e/` e container `docker-compose.e2e.yml` (nunca empacotadas no APK do aplicativo; licença open-source compatível).
 - O aplicativo NÃO DEVE possuir backend, conta de usuário, streaming ou sincronização na nuvem.
 
 ### II. Arquitetura MVVM Pura sem Bibliotecas
@@ -61,6 +62,7 @@ A reprodução de áudio DEVE ser robusta e integrada ao sistema operacional:
 A interface DEVE priorizar fidelidade visual, ergonomia e acessibilidade utilizando apenas Views nativas:
 
 - A lista de músicas e a tela "tocando agora" DEVEM seguir o design de referência do YouTube Music fornecido pelo autor; em caso de divergência, o design vence.
+- O APK DEVE incluir ícone/logo oficial alinhado à identidade visual **Nocturne Violet** (referência Stitch fornecida pelo autor).
 - A UI DEVE ser construída exclusivamente com `View`s do framework Android, sem Jetpack Compose.
 - Todos os textos exibidos na interface DEVEM estar em português do Brasil.
 - Uso com uma mão: alvos de toque DEVEM ter no mínimo `48dp` e os controles principais DEVEM permanecer na metade inferior da tela.
@@ -83,6 +85,8 @@ O código DEVE manter apenas o necessário para cumprir a especificação vigent
 ## Qualidade, Testes e Fluxo de Trabalho
 
 - Regras de negócio (pastas, busca, estado da fila e validação de playlists) DEVEM ser isoladas da interface e cobertas por testes unitários.
+- Os testes E2E DEVEM ser executados com Appium via `docker-compose.e2e.yml` (100% em container, incluindo suas dependências isoladas em `e2e/`) e DEVEM ser sempre executados por um dos subagentes dedicados: `appium-test-hydrogen` (`.agents/agents/appium-test-hydrogen.md` ou `.github/agents/appium-test-hydrogen.agent.md`) ou `appium-test-haiku` (`.github/agents/appium-test-haiku.agent.md`).
+- Operações de PR/repositório remoto DEVEM utilizar o MCP do GitHub conforme instrução registrada em `AGENTS.md`.
 - Toda mudança de comportamento DEVE começar por especificação no Spec Kit, com critérios de aceitação definidos antes da implementação.
 - Nomes de classes, funções e variáveis DEVEM ser escritos em inglês; textos de interface e mensagens de erro DEVEM ser escritos em português do Brasil.
 
@@ -98,5 +102,6 @@ O código DEVE manter apenas o necessário para cumprir a especificação vigent
 
 - **2026-11-21 (v1.0.0):** Ratificação inicial da constituição do projeto pelo autor Wesley Xavier De Oliveira Monteiro.
 - **2026-11-22 (v1.0.1):** Esclarecimento no Princípio IV pelo autor: a regra de hierarquia de pastas permanece oculta na UI por padrão, exibindo aviso apenas quando houver tentativa inválida.
+- **2026-11-22 (v1.1.0):** Inclusão da obrigatoriedade de testes E2E com Appium em `docker-compose.e2e.yml` executados sempre pelos subagentes `appium-test-hydrogen` ou `appium-test-haiku` (com exceção isolada para dependências E2E em `e2e/`), obrigatoriedade do logo oficial do APK e diretriz de uso do MCP do GitHub em `AGENTS.md`.
 
-**Version**: 1.0.1 | **Ratified**: 2026-11-21 | **Last Amended**: 2026-11-22
+**Version**: 1.1.0 | **Ratified**: 2026-11-21 | **Last Amended**: 2026-11-22

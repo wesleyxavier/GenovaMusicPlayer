@@ -1,16 +1,16 @@
-# Graph Report - GenovaMusicPlayer  (2026-11-22)
+# Graph Report - 003-e2e-appium-and-apk-logo  (2026-11-22)
 
 ## Corpus Check
-- 102 files · ~130,009 words
+- 108 files · ~141,338 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1020 nodes · 1276 edges · 81 communities (77 shown, 4 thin omitted)
+- 1058 nodes · 1309 edges · 84 communities (81 shown, 3 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d02b0094`
+- Built from commit: `92869d74`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -89,6 +89,9 @@
 - Specification Quality Checklist: MVP Parte 2 — Playlists e Refinamentos
 - Quickstart & Validation Guide: MVP Parte 2 — Playlists e Refinamentos
 - UI & Architecture Contracts: MVP Parte 2 — Playlists e Refinamentos
+- Implementation Plan: Infraestrutura E2E Appium, Logo do APK e Diretriz GitHub MCP
+- Research & Technical Decisions: 003-e2e-appium-and-apk-logo
+- test_smoke_screens.py
 
 ## God Nodes (most connected - your core abstractions)
 1. `PlaybackService` - 30 edges
@@ -103,8 +106,6 @@
 10. `PlaylistsActivity` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `FoldersActivity` --references--> `FolderPreferencesRepository`  [EXTRACTED]
-  app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/data/FolderPreferencesRepository.kt
 - `LibraryActivity` --references--> `FolderPreferencesRepository`  [EXTRACTED]
   app/src/main/java/com/genova/musicplayer/ui/LibraryActivity.kt → app/src/main/java/com/genova/musicplayer/data/FolderPreferencesRepository.kt
 - `PlaylistDetailActivity` --references--> `FolderPreferencesRepository`  [EXTRACTED]
@@ -113,11 +114,13 @@
   app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt → app/src/main/java/com/genova/musicplayer/data/MediaStoreTrackRepository.kt
 - `LibraryActivity` --references--> `MediaStoreTrackRepository`  [EXTRACTED]
   app/src/main/java/com/genova/musicplayer/ui/LibraryActivity.kt → app/src/main/java/com/genova/musicplayer/data/MediaStoreTrackRepository.kt
+- `LibraryViewModel` --references--> `Track`  [EXTRACTED]
+  app/src/main/java/com/genova/musicplayer/viewmodel/LibraryViewModel.kt → app/src/main/java/com/genova/musicplayer/domain/library/Track.kt
 
 ## Import Cycles
 - None detected.
 
-## Communities (81 total, 4 thin omitted)
+## Communities (84 total, 3 thin omitted)
 
 ### Community 0 - "Tasks: [FEATURE NAME]"
 Cohesion: 0.07
@@ -332,20 +335,20 @@ Cohesion: 0.20
 Nodes (11): Added, FolderFeedback, FoldersUiState, FoldersViewModel, List, Long, String, Unit (+3 more)
 
 ### Community 60 - "FoldersActivity"
-Cohesion: 0.19
-Nodes (8): FoldersActivity, Activity, Boolean, Bundle, Int, Intent, ListView, TextView
+Cohesion: 0.07
+Nodes (24): FolderPreferencesRepository, List, Long, String, AuthorizedFolder, FolderListAdapter, BaseAdapter, Int (+16 more)
 
 ### Community 61 - "TrackListAdapter"
-Cohesion: 0.06
-Nodes (28): deriveHiFi(), Boolean, Int, String, Track, List, String, TrackFilterEngine (+20 more)
+Cohesion: 0.05
+Nodes (30): List, MediaStoreTrackRepository, deriveHiFi(), Boolean, Int, String, Track, List (+22 more)
 
 ### Community 62 - ".addFolder"
 Cohesion: 0.22
 Nodes (10): Added, FolderAdditionResult, RejectedCoveredByParent, RejectedDuplicate, RejectedInvalidPath, FolderHierarchyValidator, Boolean, List (+2 more)
 
 ### Community 63 - "FolderListAdapter"
-Cohesion: 0.19
-Nodes (8): FolderListAdapter, BaseAdapter, Int, List, Long, View, ViewGroup, ViewHolder
+Cohesion: 0.17
+Nodes (11): Assumptions, Edge Cases, Feature Specification: Infraestrutura E2E Appium, Logo do APK e Diretriz GitHub MCP, Functional Requirements, Measurable Outcomes, Requirements *(mandatory)*, Success Criteria *(mandatory)*, User Scenarios & Testing *(mandatory)* (+3 more)
 
 ### Community 65 - ".decodeSampledArt"
 Cohesion: 0.33
@@ -356,8 +359,16 @@ Cohesion: 0.39
 Nodes (4): FolderPathNormalizer, Boolean, List, String
 
 ### Community 67 - "FolderPreferencesRepository"
-Cohesion: 0.21
-Nodes (6): FolderPreferencesRepository, List, Long, String, AuthorizedFolder, Uri
+Cohesion: 0.33
+Nodes (5): 0. Branch, Phase 1: Logo Oficial do APK (US1), Phase 2: Infraestrutura E2E Appium em Docker (US2), Phase 3: Documentação Operacional (US3) & Validação, Tasks: Infraestrutura E2E Appium, Logo do APK e Diretriz GitHub MCP
+
+### Community 68 - "AuthorizedFolder"
+Cohesion: 0.40
+Nodes (4): Content Quality, Feature Readiness, Requirement Completeness, Specification Quality Checklist: Infraestrutura E2E Appium, Logo do APK e Diretriz GitHub MCP
+
+### Community 69 - ".render"
+Cohesion: 0.67
+Nodes (3): _build_options(), driver(), UiAutomator2Options
 
 ### Community 71 - "Playlist"
 Cohesion: 0.19
@@ -399,24 +410,32 @@ Nodes (5): 1. Testes Unitários JVM (Via Docker), 2. Build APK Debug (Via Docker
 Cohesion: 0.40
 Nodes (4): 1. Refinamentos nas Telas Existentes, 2. Novas Telas e Contratos de Playlists, 3. Contratos Internos, UI & Architecture Contracts: MVP Parte 2 — Playlists e Refinamentos
 
+### Community 81 - "Implementation Plan: Infraestrutura E2E Appium, Logo do APK e Diretriz GitHub MCP"
+Cohesion: 0.50
+Nodes (3): Constitution Check, Implementation Plan: Infraestrutura E2E Appium, Logo do APK e Diretriz GitHub MCP, Summary
+
+### Community 82 - "Research & Technical Decisions: 003-e2e-appium-and-apk-logo"
+Cohesion: 0.50
+Nodes (3): 1. Stack E2E Isolada em `docker-compose.e2e.yml`, 2. Geração de Ícones do APK (`mipmap-*`), Research & Technical Decisions: 003-e2e-appium-and-apk-logo
+
 ## Knowledge Gaps
-- **443 isolated node(s):** `PlayerStatus`, `User Input`, `Pre-Execution Checks`, `Goal`, `Operating Constraints` (+438 more)
+- **461 isolated node(s):** `PlayerStatus`, `User Input`, `Pre-Execution Checks`, `Goal`, `Operating Constraints` (+456 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Track` connect `TrackListAdapter` to `AuthorizedFolder`, `LibraryActivity`, `PlaybackService`, `PlayerStateStore`, `FoldersViewModel`?**
-  _High betweenness centrality (0.082) - this node is a cross-community bridge._
-- **Why does `PlaylistDetailActivity` connect `TrackListAdapter` to `PlaylistsViewModel`, `FolderPreferencesRepository`, `AuthorizedFolder`?**
-  _High betweenness centrality (0.047) - this node is a cross-community bridge._
-- **Why does `LibraryActivity` connect `LibraryActivity` to `FolderPreferencesRepository`, `AuthorizedFolder`, `TrackListAdapter`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `Track` connect `TrackListAdapter` to `PlaybackService`, `PlayerStateStore`, `FoldersViewModel`, `LibraryActivity`?**
+  _High betweenness centrality (0.072) - this node is a cross-community bridge._
+- **Why does `PlaylistDetailActivity` connect `TrackListAdapter` to `PlaylistsViewModel`, `FoldersActivity`?**
+  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+- **Why does `PlaylistsViewModel` connect `PlaylistsViewModel` to `TrackListAdapter`, `LibraryActivity`?**
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
 - **Are the 4 inferred relationships involving `Playlist` (e.g. with `.`addTrackToPlaylist avoids duplicates and removeTrackFromPlaylist preserves order`()` and `.`createPlaylist rejects duplicate name ignoring case and whitespace`()`) actually correct?**
   _`Playlist` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `PlayerStatus`, `User Input`, `Pre-Execution Checks` to the rest of the system?**
-  _443 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _461 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Tasks: [FEATURE NAME]` be split into smaller, more focused modules?**
   _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `SKILL.md` be split into smaller, more focused modules?**
