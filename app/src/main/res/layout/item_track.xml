@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/track_row_height"
     android:background="?android:attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingStart="8dp"

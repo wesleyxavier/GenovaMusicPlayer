@@ -178,6 +178,8 @@
             android:scrollbars="vertical" />
     </LinearLayout>
 
+    <include layout="@layout/include_mini_player" />
+
     <!-- Bottom Navigation -->
     <LinearLayout
         android:layout_width="match_parent"

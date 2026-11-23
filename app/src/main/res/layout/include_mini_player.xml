@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mini_player_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_mini_player"
+    android:clickable="true"
+    android:contentDescription="@string/cd_mini_player"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="6dp">
+
+        <ImageView
+            android:id="@+id/iv_mini_player_art"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_album_art_thumb"
+            android:clipToOutline="true"
+            android:contentDescription="@null"
+            android:padding="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_note" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mini_player_title"
+                style="@style/TextTitleMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_mini_player_artist"
+                style="@style/TextLabelSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/nv_on_surface_variant"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_mini_player_play_pause"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="@drawable/bg_pill_primary"
+            android:contentDescription="@string/cd_play_pause"
+            android:padding="12dp"
+            android:src="@drawable/ic_play"
+            android:tint="@color/nv_on_primary_container" />
+
+        <ImageButton
+            android:id="@+id/btn_mini_player_next"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:layout_marginStart="4dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_next"
+            android:padding="12dp"
+            android:src="@drawable/ic_skip_next"
+            android:tint="@color/nv_on_surface" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_mini_player"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/cd_mini_player_progress"
+        android:max="1000"
+        android:progressDrawable="@drawable/seekbar_progress" />
+</LinearLayout>

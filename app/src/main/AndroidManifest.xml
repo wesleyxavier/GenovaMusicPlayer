@@ -46,6 +46,11 @@
             android:name=".ui.PlaylistDetailActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ui.QueueActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+
         <service
             android:name=".service.PlaybackService"
             android:exported="false"
