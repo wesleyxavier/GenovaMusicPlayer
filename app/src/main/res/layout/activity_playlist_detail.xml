@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nv_surface"
+    android:orientation="vertical">
+
+    <!-- Top App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_playlist_back"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_back"
+            android:padding="12dp"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/nv_on_surface" />
+
+        <TextView
+            android:id="@+id/tv_playlist_detail_title"
+            style="@style/TextTitleLarge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <ImageButton
+            android:id="@+id/btn_playlist_detail_more"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_playlist_options"
+            android:padding="12dp"
+            android:src="@drawable/ic_more_vert"
+            android:tint="@color/nv_on_surface" />
+    </LinearLayout>
+
+    <!-- Stats + Shuffle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_playlist_detail_count"
+            style="@style/TextTitleMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0 músicas" />
+
+        <Button
+            android:id="@+id/btn_playlist_shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="@drawable/bg_pill_primary"
+            android:drawableStart="@drawable/ic_shuffle"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:text="@string/action_shuffle_all"
+            android:textAllCaps="false"
+            android:textColor="@color/nv_on_primary_container"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_playlist_detail_empty"
+        style="@style/TextBodyMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/playlist_detail_empty"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list_playlist_tracks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:divider="@color/nv_transparent"
+        android:dividerHeight="2dp"
+        android:fastScrollEnabled="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp" />
+</LinearLayout>

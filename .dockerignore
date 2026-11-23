@@ -1,0 +1,14 @@
+.git/
+worktrees/
+.gradle/
+build/
+app/build/
+.idea/
+*.iml
+*.apk
+*.aab
+graphify-out/
+.env
+.claude/
+.agents/
+.gemini/

@@ -10,10 +10,11 @@ Oferecer navegação e reprodução local de músicas a partir de pastas explici
 - Arquitetura MVVM pura (sem AndroidX, Material, Compose, RecyclerView ou Media3)
 - Build e testes via Docker (`Dockerfile`)
 
-## Funcionalidades (MVP Parte 1)
-- **Pastas (`FoldersActivity`):** seleção explícita via `ACTION_OPEN_DOCUMENT_TREE`, persistência local (`SharedPreferences` + `org.json.JSONArray`), diagnósticos de varredura/uso e aplicação estrita da Regra de Hierarquia (`FolderHierarchyValidator`).
-- **Biblioteca & Busca (`LibraryActivity`):** lista virtualizada (`ListView` + `BaseAdapter` + `ViewHolder`), busca em tempo real por título/artista, filtros `"Todas"` e `"Recentes"`, botão `"Aleatório"`, carregamento assíncrono de capas em `LruCache` (`AlbumArtCacheLoader`) e detalhes do arquivo no menu `⋮`.
-- **Tocando Agora & Segundo Plano (`NowPlayingActivity` + `PlaybackService`):** `MediaPlayer` com máquina de estados explícita (`PlayerStateStore`), `MediaSession`, `Notification.MediaStyle`, gerenciamento de `AudioFocusRequest`, pausa automática ao desconectar fones (`ACTION_AUDIO_BECOMING_NOISY`), seekbar interativa, shuffle, repeat e compartilhamento.
+## Funcionalidades (MVP Parte 1 & Parte 2)
+- **Pastas (`FoldersActivity`):** seleção explícita via `ACTION_OPEN_DOCUMENT_TREE`, persistência local (`SharedPreferences` + `org.json.JSONArray`), diagnósticos de varredura/uso e aplicação estrita da Regra de Hierarquia (`FolderHierarchyValidator`, exibindo aviso somente em tentativa inválida).
+- **Biblioteca & Busca (`LibraryActivity`):** lista virtualizada (`ListView` + `BaseAdapter` + `ViewHolder`), busca em tempo real por título/artista, filtros `"Todas"` e `"Recentes"`, botão `"Aleatório"`, execução imediata ao clicar na música, carregamento assíncrono de capas em `LruCache` (`AlbumArtCacheLoader`), `"Adicionar à playlist"` e detalhes do arquivo no menu `⋮`.
+- **Playlists (`PlaylistsActivity` & `PlaylistDetailActivity`):** criação, renomeação e exclusão de playlists locais (`PlaylistManager` + `PlaylistPreferencesRepository`), adição sem duplicidade, remoção de faixas e reprodução direta.
+- **Tocando Agora & Segundo Plano (`NowPlayingActivity` + `PlaybackService`):** `MediaPlayer` com máquina de estados explícita (`PlayerStateStore`), `MediaSession`, `Notification.MediaStyle`, gerenciamento de `AudioFocusRequest`, pausa automática ao desconectar fones (`ACTION_AUDIO_BECOMING_NOISY`), saída automática pelo dispositivo ativo do sistema, seekbar interativa, shuffle, repeat e compartilhamento.
 
 ## Como executar
 1. Construir a imagem Docker:

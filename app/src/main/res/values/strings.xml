@@ -4,8 +4,10 @@
 
     <!-- Navigation -->
     <string name="tab_music">Músicas</string>
+    <string name="tab_playlists">Playlists</string>
     <string name="tab_folders">Pastas</string>
     <string name="cd_tab_music">Aba Músicas</string>
+    <string name="cd_tab_playlists">Aba Playlists</string>
     <string name="cd_tab_folders">Aba Pastas</string>
 
     <!-- Library Screen -->
@@ -103,4 +105,29 @@
     <string name="cd_next">Próxima música</string>
     <string name="cd_repeat">Alternar modo de repetição</string>
     <string name="cd_remove_folder">Remover pasta autorizada</string>
+
+    <!-- Playlists Screen -->
+    <string name="playlists_title">Playlists</string>
+    <string name="action_create_playlist">+ Criar playlist</string>
+    <string name="playlists_empty">Nenhuma playlist criada ainda.\nToque em "+ Criar playlist" para organizar suas músicas.</string>
+    <string name="playlist_track_count_format">%1$d músicas</string>
+    <string name="playlist_detail_empty">Esta playlist está vazia.\nAdicione músicas pelo menu de opções na aba Músicas.</string>
+    <string name="playlist_create_title">Nova playlist</string>
+    <string name="playlist_rename_title">Renomear playlist</string>
+    <string name="playlist_name_hint">Nome da playlist</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_create">Criar</string>
+    <string name="action_rename">Renomear</string>
+    <string name="action_delete">Excluir</string>
+    <string name="playlist_delete_title">Excluir playlist?</string>
+    <string name="playlist_delete_message">A playlist "%1$s" será excluída. As músicas no aparelho não serão apagadas.</string>
+    <string name="menu_add_to_playlist">Adicionar à playlist</string>
+    <string name="menu_remove_from_playlist">Remover da playlist</string>
+    <string name="dialog_choose_playlist_title">Adicionar à playlist</string>
+    <string name="dialog_new_playlist_option">+ Nova playlist…</string>
+    <string name="playlist_error_empty_name">Informe um nome para a playlist.</string>
+    <string name="playlist_error_duplicate_name">Já existe uma playlist com o nome "%1$s".</string>
+    <string name="playlist_track_added">Música adicionada em "%1$s".</string>
+    <string name="playlist_track_removed">Música removida da playlist.</string>
+    <string name="cd_playlist_options">Opções da playlist</string>
 </resources>

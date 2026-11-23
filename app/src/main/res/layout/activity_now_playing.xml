@@ -272,62 +272,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Audio Output Route Card -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_card_surface"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingStart="14dp"
-            android:paddingTop="8dp"
-            android:paddingEnd="8dp"
-            android:paddingBottom="8dp">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_speaker"
-                android:tint="@color/nv_primary" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/TextLabelSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/audio_output_label" />
-
-                <TextView
-                    android:id="@+id/tv_audio_output"
-                    style="@style/TextTitleMedium"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/audio_output_speaker"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/btn_switch_output"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/touch_target_min"
-                android:background="@drawable/bg_pill_surface"
-                android:fontFamily="sans-serif-medium"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:text="@string/action_switch_output"
-                android:textAllCaps="false"
-                android:textColor="@color/nv_primary"
-                android:textSize="13sp" />
-        </LinearLayout>
-
         <!-- Footer Placeholders (Inactive "Em breve" per Q1: B) -->
         <LinearLayout
             android:layout_width="match_parent"
