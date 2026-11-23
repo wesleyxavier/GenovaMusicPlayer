@@ -550,7 +550,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_data_playlistpreferencesrepository",
-      "community": 61,
+      "community": 72,
       "norm_label": "playlistpreferencesrepository.kt"
     },
     {
@@ -560,7 +560,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_data_playlistpreferencesrepository_playlistpreferencesrepository",
-      "community": 61,
+      "community": 72,
       "norm_label": "playlistpreferencesrepository"
     },
     {
@@ -570,7 +570,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_data_playlistpreferencesrepository_playlistpreferencesrepository_loadall",
-      "community": 71,
+      "community": 72,
       "norm_label": ".loadall()"
     },
     {
@@ -580,7 +580,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_data_playlistpreferencesrepository_kt_list",
-      "community": 71,
+      "community": 72,
       "norm_label": "list"
     },
     {
@@ -590,7 +590,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_data_playlistpreferencesrepository_playlistpreferencesrepository_saveall",
-      "community": 71,
+      "community": 72,
       "norm_label": ".saveall()"
     },
     {
@@ -920,7 +920,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_library_trackfilterengine",
-      "community": 55,
+      "community": 61,
       "norm_label": "trackfilterengine.kt"
     },
     {
@@ -930,7 +930,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_library_trackfilterengine_trackfilterengine",
-      "community": 55,
+      "community": 61,
       "norm_label": "trackfilterengine"
     },
     {
@@ -940,7 +940,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_library_trackfilterengine_trackfilterengine_filterandsort",
-      "community": 55,
+      "community": 61,
       "norm_label": ".filterandsort()"
     },
     {
@@ -950,7 +950,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_library_trackfilterengine_kt_list",
-      "community": 55,
+      "community": 61,
       "norm_label": "list"
     },
     {
@@ -960,7 +960,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_library_trackfilterengine_kt_string",
-      "community": 55,
+      "community": 61,
       "norm_label": "string"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlist",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlist.kt"
     },
     {
@@ -1270,7 +1270,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlist_playlist",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlist"
     },
     {
@@ -1280,7 +1280,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlistmanager.kt"
     },
     {
@@ -1290,7 +1290,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_playlistmanager",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlistmanager"
     },
     {
@@ -1300,7 +1300,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_playlistmanager_createplaylist",
-      "community": 71,
+      "community": 72,
       "norm_label": ".createplaylist()"
     },
     {
@@ -1310,7 +1310,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_kt_list",
-      "community": 71,
+      "community": 72,
       "norm_label": "list"
     },
     {
@@ -1320,7 +1320,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_kt_string",
-      "community": 71,
+      "community": 72,
       "norm_label": "string"
     },
     {
@@ -1330,7 +1330,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_kt_long",
-      "community": 71,
+      "community": 72,
       "norm_label": "long"
     },
     {
@@ -1340,7 +1340,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_playlistmanager_renameplaylist",
-      "community": 71,
+      "community": 72,
       "norm_label": ".renameplaylist()"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_playlistmanager_deleteplaylist",
-      "community": 71,
+      "community": 72,
       "norm_label": ".deleteplaylist()"
     },
     {
@@ -1360,7 +1360,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_playlistmanager_addtracktoplaylist",
-      "community": 71,
+      "community": 72,
       "norm_label": ".addtracktoplaylist()"
     },
     {
@@ -1370,7 +1370,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistmanager_playlistmanager_removetrackfromplaylist",
-      "community": 71,
+      "community": 72,
       "norm_label": ".removetrackfromplaylist()"
     },
     {
@@ -1380,7 +1380,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistvalidationresult",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlistvalidationresult.kt"
     },
     {
@@ -1390,7 +1390,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistvalidationresult_playlistvalidationresult",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlistvalidationresult"
     },
     {
@@ -1400,7 +1400,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistvalidationresult_success",
-      "community": 71,
+      "community": 72,
       "norm_label": "success"
     },
     {
@@ -1410,7 +1410,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistvalidationresult_emptyname",
-      "community": 71,
+      "community": 72,
       "norm_label": "emptyname"
     },
     {
@@ -1420,7 +1420,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistvalidationresult_duplicatename",
-      "community": 71,
+      "community": 72,
       "norm_label": "duplicatename"
     },
     {
@@ -1430,7 +1430,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_domain_playlist_playlistvalidationresult_playlistnotfound",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlistnotfound"
     },
     {
@@ -4270,7 +4270,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_src_test_java_com_genova_musicplayer_domain_playlist_playlistmanagertest",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlistmanagertest.kt"
     },
     {
@@ -4280,7 +4280,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "app_src_test_java_com_genova_musicplayer_domain_playlist_playlistmanagertest_playlistmanagertest",
-      "community": 71,
+      "community": 72,
       "norm_label": "playlistmanagertest"
     },
     {
@@ -4290,7 +4290,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "app_src_test_java_com_genova_musicplayer_domain_playlist_playlistmanagertest_playlistmanagertest_createplaylist_trims_valid_name_and_appends_to_list",
-      "community": 71,
+      "community": 72,
       "norm_label": ".`createplaylist trims valid name and appends to list`()"
     },
     {
@@ -4300,7 +4300,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "app_src_test_java_com_genova_musicplayer_domain_playlist_playlistmanagertest_playlistmanagertest_createplaylist_rejects_empty_or_blank_name",
-      "community": 71,
+      "community": 72,
       "norm_label": ".`createplaylist rejects empty or blank name`()"
     },
     {
@@ -4310,7 +4310,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "app_src_test_java_com_genova_musicplayer_domain_playlist_playlistmanagertest_playlistmanagertest_createplaylist_rejects_duplicate_name_ignoring_case_and_whitespace",
-      "community": 71,
+      "community": 72,
       "norm_label": ".`createplaylist rejects duplicate name ignoring case and whitespace`()"
     },
     {
@@ -4320,7 +4320,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "app_src_test_java_com_genova_musicplayer_domain_playlist_playlistmanagertest_playlistmanagertest_renameplaylist_validates_empty_and_duplicate_names",
-      "community": 71,
+      "community": 72,
       "norm_label": ".`renameplaylist validates empty and duplicate names`()"
     },
     {
@@ -4330,7 +4330,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "app_src_test_java_com_genova_musicplayer_domain_playlist_playlistmanagertest_playlistmanagertest_deleteplaylist_removes_target_playlist_only",
-      "community": 71,
+      "community": 72,
       "norm_label": ".`deleteplaylist removes target playlist only`()"
     },
     {
@@ -4340,7 +4340,7 @@
       "source_location": "L81",
       "_origin": "ast",
       "id": "app_src_test_java_com_genova_musicplayer_domain_playlist_playlistmanagertest_playlistmanagertest_addtracktoplaylist_avoids_duplicates_and_removetrackfromplaylist_preserves_order",
-      "community": 71,
+      "community": 72,
       "norm_label": ".`addtracktoplaylist avoids duplicates and removetrackfromplaylist preserves order`()"
     },
     {
@@ -7763,7 +7763,7 @@
       "label": "V. Reprodu\u00e7\u00e3o em Segundo Plano e Controle de \u00c1udio",
       "file_type": "document",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L48",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "specify_memory_constitution_v_reprodu\u00e7\u00e3o_em_segundo_plano_e_controle_de_\u00e1udio",
       "community": 10,
@@ -7773,7 +7773,7 @@
       "label": "VI. Interface Nativa, Acess\u00edvel e Fiel ao Design",
       "file_type": "document",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L58",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "specify_memory_constitution_vi_interface_nativa_acess\u00edvel_e_fiel_ao_design",
       "community": 10,
@@ -7783,7 +7783,7 @@
       "label": "VII. Simplicidade e Aus\u00eancia de C\u00f3digo Morto",
       "file_type": "document",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L68",
+      "source_location": "L69",
       "_origin": "ast",
       "id": "specify_memory_constitution_vii_simplicidade_e_aus\u00eancia_de_c\u00f3digo_morto",
       "community": 10,
@@ -7793,7 +7793,7 @@
       "label": "Padr\u00f5es de Desempenho",
       "file_type": "document",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L75",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "specify_memory_constitution_padr\u00f5es_de_desempenho",
       "community": 10,
@@ -7803,7 +7803,7 @@
       "label": "Qualidade, Testes e Fluxo de Trabalho",
       "file_type": "document",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L82",
+      "source_location": "L83",
       "_origin": "ast",
       "id": "specify_memory_constitution_qualidade_testes_e_fluxo_de_trabalho",
       "community": 10,
@@ -7813,7 +7813,7 @@
       "label": "Governance",
       "file_type": "document",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L88",
+      "source_location": "L89",
       "_origin": "ast",
       "id": "specify_memory_constitution_governance",
       "community": 10,
@@ -7823,7 +7823,7 @@
       "label": "Hist\u00f3rico de Emendas",
       "file_type": "document",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L96",
+      "source_location": "L97",
       "_origin": "ast",
       "id": "specify_memory_constitution_hist\u00f3rico_de_emendas",
       "community": 10,
@@ -9518,6 +9518,696 @@
       "id": "specs_001_mvp_part1_player_tasks_implementation_strategy",
       "community": 4,
       "norm_label": "implementation strategy"
+    },
+    {
+      "label": "requirements.md",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements",
+      "community": 78,
+      "norm_label": "requirements.md"
+    },
+    {
+      "label": "Specification Quality Checklist: MVP Parte 2 \u2014 Playlists e Refinamentos",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_specification_quality_checklist_mvp_parte_2_playlists_e_refinamentos",
+      "community": 78,
+      "norm_label": "specification quality checklist: mvp parte 2 \u2014 playlists e refinamentos"
+    },
+    {
+      "label": "Content Quality",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_content_quality",
+      "community": 78,
+      "norm_label": "content quality"
+    },
+    {
+      "label": "Requirement Completeness",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_requirement_completeness",
+      "community": 78,
+      "norm_label": "requirement completeness"
+    },
+    {
+      "label": "Feature Readiness",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_feature_readiness",
+      "community": 78,
+      "norm_label": "feature readiness"
+    },
+    {
+      "label": "Notes",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_notes",
+      "community": 78,
+      "norm_label": "notes"
+    },
+    {
+      "label": "playlists-and-refinements-contracts.md",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts",
+      "community": 80,
+      "norm_label": "playlists-and-refinements-contracts.md"
+    },
+    {
+      "label": "UI & Architecture Contracts: MVP Parte 2 \u2014 Playlists e Refinamentos",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_ui_architecture_contracts_mvp_parte_2_playlists_e_refinamentos",
+      "community": 80,
+      "norm_label": "ui & architecture contracts: mvp parte 2 \u2014 playlists e refinamentos"
+    },
+    {
+      "label": "1. Refinamentos nas Telas Existentes",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_1_refinamentos_nas_telas_existentes",
+      "community": 80,
+      "norm_label": "1. refinamentos nas telas existentes"
+    },
+    {
+      "label": "2. Novas Telas e Contratos de Playlists",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_2_novas_telas_e_contratos_de_playlists",
+      "community": 80,
+      "norm_label": "2. novas telas e contratos de playlists"
+    },
+    {
+      "label": "3. Contratos Internos",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_3_contratos_internos",
+      "community": 80,
+      "norm_label": "3. contratos internos"
+    },
+    {
+      "label": "data-model.md",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_data_model",
+      "community": 76,
+      "norm_label": "data-model.md"
+    },
+    {
+      "label": "Data Model: MVP Parte 2 \u2014 Playlists e Refinamentos",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_data_model_data_model_mvp_parte_2_playlists_e_refinamentos",
+      "community": 76,
+      "norm_label": "data model: mvp parte 2 \u2014 playlists e refinamentos"
+    },
+    {
+      "label": "1. Entidades de Dom\u00ednio (Kotlin Puro \u2014 sem `android.*`)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_data_model_1_entidades_de_dom\u00ednio_kotlin_puro_sem_android",
+      "community": 76,
+      "norm_label": "1. entidades de dominio (kotlin puro \u2014 sem `android.*`)"
+    },
+    {
+      "label": "`Playlist`",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_data_model_playlist",
+      "community": 76,
+      "norm_label": "`playlist`"
+    },
+    {
+      "label": "`PlaylistValidationResult` (Sealed Class)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_data_model_playlistvalidationresult_sealed_class",
+      "community": 76,
+      "norm_label": "`playlistvalidationresult` (sealed class)"
+    },
+    {
+      "label": "2. Regras de Neg\u00f3cio (`PlaylistManager`)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_data_model_2_regras_de_neg\u00f3cio_playlistmanager",
+      "community": 76,
+      "norm_label": "2. regras de negocio (`playlistmanager`)"
+    },
+    {
+      "label": "3. Persist\u00eancia Local",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_data_model_3_persist\u00eancia_local",
+      "community": 76,
+      "norm_label": "3. persistencia local"
+    },
+    {
+      "label": "plan.md",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan",
+      "community": 75,
+      "norm_label": "plan.md"
+    },
+    {
+      "label": "Implementation Plan: MVP Parte 2 \u2014 Playlists e Refinamentos",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan_implementation_plan_mvp_parte_2_playlists_e_refinamentos",
+      "community": 75,
+      "norm_label": "implementation plan: mvp parte 2 \u2014 playlists e refinamentos"
+    },
+    {
+      "label": "Summary",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan_summary",
+      "community": 75,
+      "norm_label": "summary"
+    },
+    {
+      "label": "Technical Context",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan_technical_context",
+      "community": 75,
+      "norm_label": "technical context"
+    },
+    {
+      "label": "Constitution Check",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan_constitution_check",
+      "community": 75,
+      "norm_label": "constitution check"
+    },
+    {
+      "label": "Project Structure",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan_project_structure",
+      "community": 75,
+      "norm_label": "project structure"
+    },
+    {
+      "label": "Documentation (this feature)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan_documentation_this_feature",
+      "community": 75,
+      "norm_label": "documentation (this feature)"
+    },
+    {
+      "label": "Source Code (repository root)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan_source_code_repository_root",
+      "community": 75,
+      "norm_label": "source code (repository root)"
+    },
+    {
+      "label": "Complexity Tracking",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_plan_complexity_tracking",
+      "community": 75,
+      "norm_label": "complexity tracking"
+    },
+    {
+      "label": "quickstart.md",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_quickstart",
+      "community": 79,
+      "norm_label": "quickstart.md"
+    },
+    {
+      "label": "Quickstart & Validation Guide: MVP Parte 2 \u2014 Playlists e Refinamentos",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_quickstart_quickstart_validation_guide_mvp_parte_2_playlists_e_refinamentos",
+      "community": 79,
+      "norm_label": "quickstart & validation guide: mvp parte 2 \u2014 playlists e refinamentos"
+    },
+    {
+      "label": "1. Testes Unit\u00e1rios JVM (Via Docker)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_quickstart_1_testes_unit\u00e1rios_jvm_via_docker",
+      "community": 79,
+      "norm_label": "1. testes unitarios jvm (via docker)"
+    },
+    {
+      "label": "Cen\u00e1rios Obrigat\u00f3rios Validados (`PlaylistManagerTest`)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_quickstart_cen\u00e1rios_obrigat\u00f3rios_validados_playlistmanagertest",
+      "community": 79,
+      "norm_label": "cenarios obrigatorios validados (`playlistmanagertest`)"
+    },
+    {
+      "label": "2. Build APK Debug (Via Docker)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_quickstart_2_build_apk_debug_via_docker",
+      "community": 79,
+      "norm_label": "2. build apk debug (via docker)"
+    },
+    {
+      "label": "3. Valida\u00e7\u00e3o Manual no Dispositivo",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_quickstart_3_valida\u00e7\u00e3o_manual_no_dispositivo",
+      "community": 79,
+      "norm_label": "3. validacao manual no dispositivo"
+    },
+    {
+      "label": "research.md",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_research",
+      "community": 77,
+      "norm_label": "research.md"
+    },
+    {
+      "label": "Research & Technical Decisions: MVP Parte 2 \u2014 Playlists e Refinamentos",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_research_research_technical_decisions_mvp_parte_2_playlists_e_refinamentos",
+      "community": 77,
+      "norm_label": "research & technical decisions: mvp parte 2 \u2014 playlists e refinamentos"
+    },
+    {
+      "label": "1. Dom\u00ednio de Playlists em Kotlin Puro",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_research_1_dom\u00ednio_de_playlists_em_kotlin_puro",
+      "community": 77,
+      "norm_label": "1. dominio de playlists em kotlin puro"
+    },
+    {
+      "label": "2. Persist\u00eancia Local de Playlists sem Bibliotecas Externas",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_research_2_persist\u00eancia_local_de_playlists_sem_bibliotecas_externas",
+      "community": 77,
+      "norm_label": "2. persistencia local de playlists sem bibliotecas externas"
+    },
+    {
+      "label": "3. Navega\u00e7\u00e3o Inferior e Pontos de Entrada de Playlists",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_research_3_navega\u00e7\u00e3o_inferior_e_pontos_de_entrada_de_playlists",
+      "community": 77,
+      "norm_label": "3. navegacao inferior e pontos de entrada de playlists"
+    },
+    {
+      "label": "4. Sa\u00edda de \u00c1udio Ativa sem Troca Manual",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_research_4_sa\u00edda_de_\u00e1udio_ativa_sem_troca_manual",
+      "community": 77,
+      "norm_label": "4. saida de audio ativa sem troca manual"
+    },
+    {
+      "label": "5. Oculta\u00e7\u00e3o da Regra de Hierarquia na Tela de Pastas",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_research_5_oculta\u00e7\u00e3o_da_regra_de_hierarquia_na_tela_de_pastas",
+      "community": 77,
+      "norm_label": "5. ocultacao da regra de hierarquia na tela de pastas"
+    },
+    {
+      "label": "spec.md",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec",
+      "community": 74,
+      "norm_label": "spec.md"
+    },
+    {
+      "label": "Feature Specification: MVP Parte 2 \u2014 Playlists e Refinamentos de Navega\u00e7\u00e3o e Pastas",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_feature_specification_mvp_parte_2_playlists_e_refinamentos_de_navega\u00e7\u00e3o_e_pastas",
+      "community": 74,
+      "norm_label": "feature specification: mvp parte 2 \u2014 playlists e refinamentos de navegacao e pastas"
+    },
+    {
+      "label": "User Scenarios & Testing *(mandatory)*",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_user_scenarios_testing_mandatory",
+      "community": 74,
+      "norm_label": "user scenarios & testing *(mandatory)*"
+    },
+    {
+      "label": "User Story 1 - Executar M\u00fasica ao Clicar na Lista (Priority: P1)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_user_story_1_executar_m\u00fasica_ao_clicar_na_lista_priority_p1",
+      "community": 74,
+      "norm_label": "user story 1 - executar musica ao clicar na lista (priority: p1)"
+    },
+    {
+      "label": "User Story 2 - Criar e Gerenciar Playlists Locais (Priority: P1)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_user_story_2_criar_e_gerenciar_playlists_locais_priority_p1",
+      "community": 74,
+      "norm_label": "user story 2 - criar e gerenciar playlists locais (priority: p1)"
+    },
+    {
+      "label": "User Story 3 - Simplificar Tela \"Tocando Agora\" Usando Sa\u00edda de \u00c1udio Ativa (Priority: P2)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_user_story_3_simplificar_tela_tocando_agora_usando_sa\u00edda_de_\u00e1udio_ativa_priority_p2",
+      "community": 74,
+      "norm_label": "user story 3 - simplificar tela \"tocando agora\" usando saida de audio ativa (priority: p2)"
+    },
+    {
+      "label": "User Story 4 - Ocultar Regra de Hierarquia da Tela de Pastas (Priority: P2)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_user_story_4_ocultar_regra_de_hierarquia_da_tela_de_pastas_priority_p2",
+      "community": 74,
+      "norm_label": "user story 4 - ocultar regra de hierarquia da tela de pastas (priority: p2)"
+    },
+    {
+      "label": "Edge Cases",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_edge_cases",
+      "community": 74,
+      "norm_label": "edge cases"
+    },
+    {
+      "label": "Requirements *(mandatory)*",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_requirements_mandatory",
+      "community": 74,
+      "norm_label": "requirements *(mandatory)*"
+    },
+    {
+      "label": "Functional Requirements",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_functional_requirements",
+      "community": 74,
+      "norm_label": "functional requirements"
+    },
+    {
+      "label": "Key Entities",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_key_entities",
+      "community": 74,
+      "norm_label": "key entities"
+    },
+    {
+      "label": "Success Criteria *(mandatory)*",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_success_criteria_mandatory",
+      "community": 74,
+      "norm_label": "success criteria *(mandatory)*"
+    },
+    {
+      "label": "Measurable Outcomes",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_measurable_outcomes",
+      "community": 74,
+      "norm_label": "measurable outcomes"
+    },
+    {
+      "label": "Assumptions",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L102",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_spec_assumptions",
+      "community": 74,
+      "norm_label": "assumptions"
+    },
+    {
+      "label": "tasks.md",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks",
+      "community": 73,
+      "norm_label": "tasks.md"
+    },
+    {
+      "label": "Tasks: MVP Parte 2 \u2014 Playlists e Refinamentos",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "community": 73,
+      "norm_label": "tasks: mvp parte 2 \u2014 playlists e refinamentos"
+    },
+    {
+      "label": "Format: `[ID] [P?] [Story] Description`",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_format_id_p_story_description",
+      "community": 73,
+      "norm_label": "format: `[id] [p?] [story] description`"
+    },
+    {
+      "label": "0. Branch",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_0_branch",
+      "community": 73,
+      "norm_label": "0. branch"
+    },
+    {
+      "label": "Phase 1: Foundational (Textos & Navega\u00e7\u00e3o Compartilhada)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_1_foundational_textos_navega\u00e7\u00e3o_compartilhada",
+      "community": 73,
+      "norm_label": "phase 1: foundational (textos & navegacao compartilhada)"
+    },
+    {
+      "label": "Phase 2: User Story 1 - Executar M\u00fasica ao Clicar na Lista (Priority: P1) \ud83c\udfaf MVP",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_2_user_story_1_executar_m\u00fasica_ao_clicar_na_lista_priority_p1_mvp",
+      "community": 73,
+      "norm_label": "phase 2: user story 1 - executar musica ao clicar na lista (priority: p1) \ud83c\udfaf mvp"
+    },
+    {
+      "label": "Phase 3: User Story 2 - Criar e Gerenciar Playlists Locais (Priority: P1) \ud83c\udfaf MVP",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_3_user_story_2_criar_e_gerenciar_playlists_locais_priority_p1_mvp",
+      "community": 73,
+      "norm_label": "phase 3: user story 2 - criar e gerenciar playlists locais (priority: p1) \ud83c\udfaf mvp"
+    },
+    {
+      "label": "Tests for User Story 2",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_tests_for_user_story_2",
+      "community": 73,
+      "norm_label": "tests for user story 2"
+    },
+    {
+      "label": "Implementation for User Story 2",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_implementation_for_user_story_2",
+      "community": 73,
+      "norm_label": "implementation for user story 2"
+    },
+    {
+      "label": "3.1 Commit Group 1",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_3_1_commit_group_1",
+      "community": 73,
+      "norm_label": "3.1 commit group 1"
+    },
+    {
+      "label": "Phase 4: User Story 3 - Simplificar Tela \"Tocando Agora\" Usando Sa\u00edda Ativa (Priority: P2)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_4_user_story_3_simplificar_tela_tocando_agora_usando_sa\u00edda_ativa_priority_p2",
+      "community": 73,
+      "norm_label": "phase 4: user story 3 - simplificar tela \"tocando agora\" usando saida ativa (priority: p2)"
+    },
+    {
+      "label": "Phase 5: User Story 4 - Ocultar Regra de Hierarquia da Tela de Pastas (Priority: P2)",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_5_user_story_4_ocultar_regra_de_hierarquia_da_tela_de_pastas_priority_p2",
+      "community": 73,
+      "norm_label": "phase 5: user story 4 - ocultar regra de hierarquia da tela de pastas (priority: p2)"
+    },
+    {
+      "label": "5.1 Commit Group 2",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_5_1_commit_group_2",
+      "community": 73,
+      "norm_label": "5.1 commit group 2"
+    },
+    {
+      "label": "Phase 6: Testes, Deploy no Celular & Pre-PR Checklist",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_6_testes_deploy_no_celular_pre_pr_checklist",
+      "community": 73,
+      "norm_label": "phase 6: testes, deploy no celular & pre-pr checklist"
+    },
+    {
+      "label": "Dependencies & Execution Order",
+      "file_type": "document",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L103",
+      "_origin": "ast",
+      "id": "specs_002_mvp_part2_playlists_and_refinements_tasks_dependencies_execution_order",
+      "community": 73,
+      "norm_label": "dependencies & execution order"
     }
   ],
   "links": [
@@ -20445,7 +21135,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L88",
+      "source_location": "L89",
       "weight": 1.0,
       "source": "specify_memory_constitution_genovamusicplayer_player_de_m\u00fasica_android_constitution",
       "target": "specify_memory_constitution_governance",
@@ -20455,7 +21145,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L75",
+      "source_location": "L76",
       "weight": 1.0,
       "source": "specify_memory_constitution_genovamusicplayer_player_de_m\u00fasica_android_constitution",
       "target": "specify_memory_constitution_padr\u00f5es_de_desempenho",
@@ -20465,7 +21155,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L82",
+      "source_location": "L83",
       "weight": 1.0,
       "source": "specify_memory_constitution_genovamusicplayer_player_de_m\u00fasica_android_constitution",
       "target": "specify_memory_constitution_qualidade_testes_e_fluxo_de_trabalho",
@@ -20515,7 +21205,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0,
       "source": "specify_memory_constitution_core_principles",
       "target": "specify_memory_constitution_v_reprodu\u00e7\u00e3o_em_segundo_plano_e_controle_de_\u00e1udio",
@@ -20525,7 +21215,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L58",
+      "source_location": "L59",
       "weight": 1.0,
       "source": "specify_memory_constitution_core_principles",
       "target": "specify_memory_constitution_vi_interface_nativa_acess\u00edvel_e_fiel_ao_design",
@@ -20535,7 +21225,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L68",
+      "source_location": "L69",
       "weight": 1.0,
       "source": "specify_memory_constitution_core_principles",
       "target": "specify_memory_constitution_vii_simplicidade_e_aus\u00eancia_de_c\u00f3digo_morto",
@@ -20545,7 +21235,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".specify/memory/constitution.md",
-      "source_location": "L96",
+      "source_location": "L97",
       "weight": 1.0,
       "source": "specify_memory_constitution_governance",
       "target": "specify_memory_constitution_hist\u00f3rico_de_emendas",
@@ -22099,6 +22789,616 @@
       "weight": 1.0,
       "source": "specs_001_mvp_part1_player_tasks_phase_5_user_story_3_controlar_reprodu\u00e7\u00e3o_na_tela_tocando_agora_e_em_segundo_plano_priority_p1",
       "target": "specs_001_mvp_part1_player_tasks_5_1_commit_group_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_specification_quality_checklist_mvp_parte_2_playlists_e_refinamentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_specification_quality_checklist_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_content_quality",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_specification_quality_checklist_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_feature_readiness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_specification_quality_checklist_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_specification_quality_checklist_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_checklists_requirements_requirement_completeness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_ui_architecture_contracts_mvp_parte_2_playlists_e_refinamentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_ui_architecture_contracts_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_1_refinamentos_nas_telas_existentes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_ui_architecture_contracts_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_2_novas_telas_e_contratos_de_playlists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_ui_architecture_contracts_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_contracts_playlists_and_refinements_contracts_3_contratos_internos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_data_model",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_data_model_data_model_mvp_parte_2_playlists_e_refinamentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_data_model_data_model_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_data_model_1_entidades_de_dom\u00ednio_kotlin_puro_sem_android",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_data_model_data_model_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_data_model_2_regras_de_neg\u00f3cio_playlistmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_data_model_data_model_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_data_model_3_persist\u00eancia_local",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_data_model_1_entidades_de_dom\u00ednio_kotlin_puro_sem_android",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_data_model_playlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/data-model.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_data_model_1_entidades_de_dom\u00ednio_kotlin_puro_sem_android",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_data_model_playlistvalidationresult_sealed_class",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_plan",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_plan_implementation_plan_mvp_parte_2_playlists_e_refinamentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_plan_implementation_plan_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_plan_complexity_tracking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_plan_implementation_plan_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_plan_constitution_check",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_plan_implementation_plan_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_plan_project_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_plan_implementation_plan_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_plan_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_plan_implementation_plan_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_plan_technical_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_plan_project_structure",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_plan_documentation_this_feature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/plan.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_plan_project_structure",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_plan_source_code_repository_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_quickstart",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_quickstart_quickstart_validation_guide_mvp_parte_2_playlists_e_refinamentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_quickstart_quickstart_validation_guide_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_quickstart_1_testes_unit\u00e1rios_jvm_via_docker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_quickstart_quickstart_validation_guide_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_quickstart_2_build_apk_debug_via_docker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_quickstart_quickstart_validation_guide_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_quickstart_3_valida\u00e7\u00e3o_manual_no_dispositivo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/quickstart.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_quickstart_1_testes_unit\u00e1rios_jvm_via_docker",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_quickstart_cen\u00e1rios_obrigat\u00f3rios_validados_playlistmanagertest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_research",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_research_research_technical_decisions_mvp_parte_2_playlists_e_refinamentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_research_research_technical_decisions_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_research_1_dom\u00ednio_de_playlists_em_kotlin_puro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_research_research_technical_decisions_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_research_2_persist\u00eancia_local_de_playlists_sem_bibliotecas_externas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_research_research_technical_decisions_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_research_3_navega\u00e7\u00e3o_inferior_e_pontos_de_entrada_de_playlists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_research_research_technical_decisions_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_research_4_sa\u00edda_de_\u00e1udio_ativa_sem_troca_manual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/research.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_research_research_technical_decisions_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_research_5_oculta\u00e7\u00e3o_da_regra_de_hierarquia_na_tela_de_pastas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_feature_specification_mvp_parte_2_playlists_e_refinamentos_de_navega\u00e7\u00e3o_e_pastas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_feature_specification_mvp_parte_2_playlists_e_refinamentos_de_navega\u00e7\u00e3o_e_pastas",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_assumptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_feature_specification_mvp_parte_2_playlists_e_refinamentos_de_navega\u00e7\u00e3o_e_pastas",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_requirements_mandatory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_feature_specification_mvp_parte_2_playlists_e_refinamentos_de_navega\u00e7\u00e3o_e_pastas",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_success_criteria_mandatory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_feature_specification_mvp_parte_2_playlists_e_refinamentos_de_navega\u00e7\u00e3o_e_pastas",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_user_scenarios_testing_mandatory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_user_scenarios_testing_mandatory",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_edge_cases",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_user_scenarios_testing_mandatory",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_user_story_1_executar_m\u00fasica_ao_clicar_na_lista_priority_p1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_user_scenarios_testing_mandatory",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_user_story_2_criar_e_gerenciar_playlists_locais_priority_p1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_user_scenarios_testing_mandatory",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_user_story_3_simplificar_tela_tocando_agora_usando_sa\u00edda_de_\u00e1udio_ativa_priority_p2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_user_scenarios_testing_mandatory",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_user_story_4_ocultar_regra_de_hierarquia_da_tela_de_pastas_priority_p2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_requirements_mandatory",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_functional_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_requirements_mandatory",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_key_entities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/spec.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_spec_success_criteria_mandatory",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_spec_measurable_outcomes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_0_branch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_dependencies_execution_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_format_id_p_story_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_1_foundational_textos_navega\u00e7\u00e3o_compartilhada",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_2_user_story_1_executar_m\u00fasica_ao_clicar_na_lista_priority_p1_mvp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_3_user_story_2_criar_e_gerenciar_playlists_locais_priority_p1_mvp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_4_user_story_3_simplificar_tela_tocando_agora_usando_sa\u00edda_ativa_priority_p2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_5_user_story_4_ocultar_regra_de_hierarquia_da_tela_de_pastas_priority_p2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_tasks_mvp_parte_2_playlists_e_refinamentos",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_6_testes_deploy_no_celular_pre_pr_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_3_user_story_2_criar_e_gerenciar_playlists_locais_priority_p1_mvp",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_3_1_commit_group_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_3_user_story_2_criar_e_gerenciar_playlists_locais_priority_p1_mvp",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_implementation_for_user_story_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_3_user_story_2_criar_e_gerenciar_playlists_locais_priority_p1_mvp",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_tests_for_user_story_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specs/002-mvp-part2-playlists-and-refinements/tasks.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "specs_002_mvp_part2_playlists_and_refinements_tasks_phase_5_user_story_4_ocultar_regra_de_hierarquia_da_tela_de_pastas_priority_p2",
+      "target": "specs_002_mvp_part2_playlists_and_refinements_tasks_5_1_commit_group_2",
       "confidence_score": 1.0
     }
   ],

@@ -29,3 +29,8 @@ Oferecer navegação e reprodução local de músicas a partir de pastas explici
 - Pastas selecionadas via `ACTION_OPEN_DOCUMENT_TREE`, sem varredura global do armazenamento.
 - Regra de hierarquia: nunca manter pastas em relação ancestral/descendente (filha de pasta já incluída é recusada; pasta mãe remove filhas automaticamente).
 - Reprodução com `MediaPlayer`, `MediaSession`, `Notification.MediaStyle`, `ForegroundService` e pausa automática ao perder foco ou desconectar fones.
+
+## Design de Referência (Nocturne Violet)
+- [Biblioteca & Busca](docs/design/biblioteca_busca.png)
+- [Tocando Agora](docs/design/tocando_agora.png)
+- [Gerenciador de Pastas](docs/design/gerenciador_de_pastas.png)

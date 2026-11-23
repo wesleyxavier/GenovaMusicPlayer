@@ -2220,7 +2220,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "edittext",
-      "community": 61,
+      "community": 55,
       "norm_label": "edittext"
     },
     {
@@ -2430,7 +2430,7 @@
       "source_location": "L273",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_ui_libraryactivity_libraryactivity_showtrackcontextmenu",
-      "community": 61,
+      "community": 55,
       "norm_label": ".showtrackcontextmenu()"
     },
     {
@@ -2440,7 +2440,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_ui_libraryactivity_kt_view",
-      "community": 61,
+      "community": 55,
       "norm_label": "view"
     },
     {
@@ -2450,7 +2450,7 @@
       "source_location": "L293",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_ui_libraryactivity_libraryactivity_showaddtoplaylistdialog",
-      "community": 61,
+      "community": 55,
       "norm_label": ".showaddtoplaylistdialog()"
     },
     {
@@ -2460,7 +2460,7 @@
       "source_location": "L346",
       "_origin": "ast",
       "id": "app_src_main_java_com_genova_musicplayer_ui_libraryactivity_libraryactivity_showtrackdetailsdialog",
-      "community": 61,
+      "community": 55,
       "norm_label": ".showtrackdetailsdialog()"
     },
     {
@@ -8638,6 +8638,16 @@
       "id": "readme_regras_de_dom\u00ednio",
       "community": 9,
       "norm_label": "regras de dominio"
+    },
+    {
+      "label": "Design de Refer\u00eancia (Nocturne Violet)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "readme_design_de_refer\u00eancia_nocturne_violet",
+      "community": 9,
+      "norm_label": "design de referencia (nocturne violet)"
     },
     {
       "label": "requirements.md",
@@ -21955,6 +21965,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "readme_genovamusicplayer",
+      "target": "readme_design_de_refer\u00eancia_nocturne_violet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
       "source": "readme_genovamusicplayer",
@@ -23403,5 +23423,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b3a48567a868c6deeaadbfe3bc5a47b26a69d440"
+  "built_at_commit": "d02b0094f170b9f699f225a6b6278b8f916b0378"
 }

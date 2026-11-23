@@ -230,8 +230,8 @@
     "semantic_hash": ""
   },
   ".specify/memory/constitution.md": {
-    "mtime": 1795395471.3592224,
-    "ast_hash": "26029e4ed006b56bec2fd1f3fe32af64",
+    "mtime": 1795367907.9447744,
+    "ast_hash": "8d533f4a39d0d8065832519c66df3c80",
     "semantic_hash": ""
   },
   ".specify/templates/checklist-template.md": {
@@ -270,7 +270,7 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1795395781.229193,
+    "mtime": 1795395976.2102733,
     "ast_hash": "5ce0bf92055b69dc71c4afb64a37e27f",
     "semantic_hash": ""
   },
@@ -385,12 +385,12 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/LibraryActivity.kt": {
-    "mtime": 1795395624.9401982,
+    "mtime": 1795395975.8425498,
     "ast_hash": "d1c840297b3a87fb2c8a773665a7cae9",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/NowPlayingActivity.kt": {
-    "mtime": 1795395633.1398084,
+    "mtime": 1795395975.8677766,
     "ast_hash": "330ae4cb776b84a6e4d49c17e9a677b7",
     "semantic_hash": ""
   },
@@ -467,6 +467,46 @@
   "app/src/test/java/com/genova/musicplayer/domain/playlist/PlaylistManagerTest.kt": {
     "mtime": 1795395527.678253,
     "ast_hash": "b19fe9cd845c3344fd0e84ffa76d8766",
+    "semantic_hash": ""
+  },
+  "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md": {
+    "mtime": 1795368063.6911888,
+    "ast_hash": "0aaaddc70bebfaa221919d68c04346d1",
+    "semantic_hash": ""
+  },
+  "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md": {
+    "mtime": 1795368112.2771342,
+    "ast_hash": "13d54562387a6a3dac1821c2cfa2f9b4",
+    "semantic_hash": ""
+  },
+  "specs/002-mvp-part2-playlists-and-refinements/data-model.md": {
+    "mtime": 1795368110.9755778,
+    "ast_hash": "61b3518bc5040360799b3b1842c38a6e",
+    "semantic_hash": ""
+  },
+  "specs/002-mvp-part2-playlists-and-refinements/plan.md": {
+    "mtime": 1795368143.2596688,
+    "ast_hash": "1d9c561d80d76fd2f4581d8747821d51",
+    "semantic_hash": ""
+  },
+  "specs/002-mvp-part2-playlists-and-refinements/quickstart.md": {
+    "mtime": 1795368113.5362904,
+    "ast_hash": "5dcee5f8e082a2deb59ce1fae3983668",
+    "semantic_hash": ""
+  },
+  "specs/002-mvp-part2-playlists-and-refinements/research.md": {
+    "mtime": 1795368109.7415946,
+    "ast_hash": "49437966a5cd1177d2c0d7514d3cd8c3",
+    "semantic_hash": ""
+  },
+  "specs/002-mvp-part2-playlists-and-refinements/spec.md": {
+    "mtime": 1795368063.7227027,
+    "ast_hash": "828a31bb8cda826143c507e73b3e29df",
+    "semantic_hash": ""
+  },
+  "specs/002-mvp-part2-playlists-and-refinements/tasks.md": {
+    "mtime": 1795395976.1826115,
+    "ast_hash": "542ceb6a30016cfacd8e249eabc8aeff",
     "semantic_hash": ""
   }
 }
