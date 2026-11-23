@@ -50,7 +50,9 @@ class LibraryActivity : Activity() {
     private lateinit var etSearch: EditText
     private lateinit var btnClearSearch: ImageButton
     private lateinit var chipAll: TextView
+    private lateinit var chipNowPlaying: TextView
     private lateinit var chipRecent: TextView
+    private lateinit var miniPlayerController: MiniPlayerController
     private lateinit var tvTrackCount: TextView
     private lateinit var btnShuffleAll: Button
     private lateinit var listTracks: ListView
@@ -81,7 +83,9 @@ class LibraryActivity : Activity() {
         etSearch = findViewById(R.id.et_search)
         btnClearSearch = findViewById(R.id.btn_clear_search)
         chipAll = findViewById(R.id.chip_all)
+        chipNowPlaying = findViewById(R.id.chip_now_playing)
         chipRecent = findViewById(R.id.chip_recent)
+        miniPlayerController = MiniPlayerController(this)
         tvTrackCount = findViewById(R.id.tv_track_count)
         btnShuffleAll = findViewById(R.id.btn_shuffle_all)
         listTracks = findViewById(R.id.list_tracks)
@@ -96,7 +100,7 @@ class LibraryActivity : Activity() {
         listTracks.setOnItemClickListener { _, _, position, _ ->
             val tracks = viewModel.getState().visibleTracks
             if (position in tracks.indices) {
-                startPlayback(tracks, position, enableShuffle = false)
+                playSingleTrack(tracks[position])
             }
         }
 
@@ -117,6 +121,13 @@ class LibraryActivity : Activity() {
         })
 
         chipAll.setOnClickListener { viewModel.onFilterSelected(LibraryFilter.ALL) }
+        chipNowPlaying.setOnClickListener {
+            if (PlayerStateStore.getState().currentTrack != null) {
+                startActivity(Intent(this, NowPlayingActivity::class.java))
+            } else {
+                Toast.makeText(this, R.string.no_active_playback_toast, Toast.LENGTH_SHORT).show()
+            }
+        }
         chipRecent.setOnClickListener { viewModel.onFilterSelected(LibraryFilter.RECENT) }
 
         btnShuffleAll.setOnClickListener {
@@ -150,6 +161,7 @@ class LibraryActivity : Activity() {
 
     override fun onResume() {
         super.onResume()
+        miniPlayerController.bind()
         PlayerStateStore.addListener(playerListener)
         val currentSession = PlayerStateStore.getState()
         viewModel.updatePlaybackIndicator(
@@ -161,6 +173,7 @@ class LibraryActivity : Activity() {
 
     override fun onPause() {
         super.onPause()
+        miniPlayerController.unbind()
         PlayerStateStore.removeListener(playerListener)
     }
 
@@ -272,10 +285,27 @@ class LibraryActivity : Activity() {
 
     private fun showTrackContextMenu(track: Track, anchor: View) {
         val popup = PopupMenu(this, anchor)
-        popup.menu.add(0, MENU_ADD_TO_PLAYLIST, 0, R.string.menu_add_to_playlist)
-        popup.menu.add(0, MENU_DETAILS, 1, R.string.menu_track_details)
+        popup.menu.add(0, MENU_ADD_TO_QUEUE, 0, R.string.menu_add_to_queue)
+        popup.menu.add(0, MENU_ADD_TO_PLAYLIST, 1, R.string.menu_add_to_playlist)
+        popup.menu.add(0, MENU_DETAILS, 2, R.string.menu_track_details)
         popup.setOnMenuItemClickListener { item ->
             when (item.itemId) {
+                MENU_ADD_TO_QUEUE -> {
+                    val wasIdle = PlayerStateStore.getState().currentTrack == null
+                    PlayerStateStore.appendToQueue(listOf(track), getString(R.string.queue_origin_library))
+                    if (wasIdle) {
+                        val serviceIntent = Intent(this, PlaybackService::class.java).apply {
+                            action = PlaybackService.ACTION_PLAY
+                        }
+                        startForegroundService(serviceIntent)
+                    }
+                    Toast.makeText(
+                        this,
+                        getString(R.string.queue_added_track_toast, track.title),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    true
+                }
                 MENU_ADD_TO_PLAYLIST -> {
                     showAddToPlaylistDialog(track)
                     true
@@ -292,55 +322,11 @@ class LibraryActivity : Activity() {
 
     private fun showAddToPlaylistDialog(track: Track) {
         val playlistsViewModel = PlaylistsViewModel(PlaylistPreferencesRepository(this))
-        playlistsViewModel.loadPlaylists()
-        val playlists = playlistsViewModel.getState().playlists
-        val labels = playlists.map { it.name } + getString(R.string.dialog_new_playlist_option)
-
-        AlertDialog.Builder(this)
-            .setTitle(R.string.dialog_choose_playlist_title)
-            .setItems(labels.toTypedArray()) { _, which ->
-                if (which < playlists.size) {
-                    val chosen = playlists[which]
-                    playlistsViewModel.addTrackToPlaylist(chosen.id, track.id)
-                    Toast.makeText(
-                        this,
-                        getString(R.string.playlist_track_added, chosen.name),
-                        Toast.LENGTH_SHORT
-                    ).show()
-                } else {
-                    val input = EditText(this).apply {
-                        hint = getString(R.string.playlist_name_hint)
-                    }
-                    AlertDialog.Builder(this)
-                        .setTitle(R.string.playlist_create_title)
-                        .setView(input)
-                        .setPositiveButton(R.string.action_create) { _, _ ->
-                            val created = playlistsViewModel.createPlaylist(input.text.toString())
-                            if (created != null) {
-                                playlistsViewModel.addTrackToPlaylist(created.id, track.id)
-                                Toast.makeText(
-                                    this,
-                                    getString(R.string.playlist_track_added, created.name),
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                            } else {
-                                val feedbackMsg = when (val fb = playlistsViewModel.getState().feedback) {
-                                    PlaylistFeedback.EmptyName -> getString(R.string.playlist_error_empty_name)
-                                    is PlaylistFeedback.DuplicateName -> {
-                                        getString(R.string.playlist_error_duplicate_name, fb.name)
-                                    }
-                                    else -> null
-                                }
-                                if (feedbackMsg != null) {
-                                    Toast.makeText(this, feedbackMsg, Toast.LENGTH_SHORT).show()
-                                }
-                            }
-                        }
-                        .setNegativeButton(R.string.action_cancel, null)
-                        .show()
-                }
-            }
-            .show()
+        PlaylistDialogs.showAddToPlaylistsDialog(
+            activity = this,
+            track = track,
+            viewModel = playlistsViewModel
+        )
     }
 
     private fun showTrackDetailsDialog(track: Track) {
@@ -362,6 +348,15 @@ class LibraryActivity : Activity() {
             .setMessage(message)
             .setPositiveButton(R.string.details_close, null)
             .show()
+    }
+
+    private fun playSingleTrack(track: Track) {
+        PlayerStateStore.enqueueAsLastAndPlay(track, getString(R.string.queue_origin_library))
+        val serviceIntent = Intent(this, PlaybackService::class.java).apply {
+            action = PlaybackService.ACTION_PLAY
+        }
+        startForegroundService(serviceIntent)
+        startActivity(Intent(this, NowPlayingActivity::class.java))
     }
 
     private fun startPlayback(tracks: List<Track>, index: Int, enableShuffle: Boolean) {
@@ -422,6 +417,7 @@ class LibraryActivity : Activity() {
     companion object {
         const val EXTRA_FOCUS_SEARCH = "extra_focus_search"
         private const val REQUEST_AUDIO_PERMISSION = 2001
+        private const val MENU_ADD_TO_QUEUE = 0
         private const val MENU_DETAILS = 1
         private const val MENU_ADD_TO_PLAYLIST = 2
     }

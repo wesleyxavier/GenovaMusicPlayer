@@ -87,48 +87,71 @@
             android:visibility="gone" />
     </LinearLayout>
 
-    <!-- Filter Chips (Todas, Recentes) -->
-    <LinearLayout
+    <!-- Filter Chips (Todas, Tocando Agora, Recentes) -->
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal">
+        android:scrollbars="none">
 
-        <TextView
-            android:id="@+id/chip_all"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/chip_height"
-            android:background="@drawable/bg_pill_primary"
-            android:clickable="true"
-            android:focusable="true"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:minWidth="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:text="@string/filter_all"
-            android:textColor="@color/nv_on_primary_container"
-            android:textSize="13sp" />
+            android:paddingEnd="16dp">
 
-        <TextView
-            android:id="@+id/chip_recent"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/chip_height"
-            android:layout_marginStart="8dp"
-            android:background="@drawable/bg_pill_surface"
-            android:clickable="true"
-            android:focusable="true"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:minWidth="88dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:text="@string/filter_recent"
-            android:textColor="@color/nv_on_surface_variant"
-            android:textSize="13sp" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/chip_all"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_target_min"
+                android:background="@drawable/bg_pill_primary"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/filter_all"
+                android:textColor="@color/nv_on_primary_container"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/chip_now_playing"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_target_min"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_pill_surface"
+                android:clickable="true"
+                android:contentDescription="@string/cd_chip_now_playing"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/chip_now_playing"
+                android:textColor="@color/nv_on_surface_variant"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/chip_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/touch_target_min"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_pill_surface"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:minWidth="88dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/filter_recent"
+                android:textColor="@color/nv_on_surface_variant"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <!-- Stats + Shuffle All -->
     <LinearLayout
@@ -220,6 +243,8 @@
         android:fastScrollEnabled="true"
         android:paddingStart="8dp"
         android:paddingEnd="4dp" />
+
+    <include layout="@layout/include_mini_player" />
 
     <!-- Bottom Navigation -->
     <LinearLayout

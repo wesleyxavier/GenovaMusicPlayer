@@ -285,7 +285,6 @@
                 android:layout_height="@dimen/touch_target_min"
                 android:layout_marginEnd="6dp"
                 android:layout_weight="1"
-                android:alpha="0.55"
                 android:background="@drawable/bg_card_surface"
                 android:clickable="true"
                 android:contentDescription="@string/action_queue_next"
@@ -298,7 +297,7 @@
                     android:layout_height="18dp"
                     android:contentDescription="@null"
                     android:src="@drawable/ic_queue"
-                    android:tint="@color/nv_on_surface_variant" />
+                    android:tint="@color/nv_primary" />
 
                 <TextView
                     style="@style/TextLabelSmall"
@@ -306,15 +305,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
                     android:text="@string/action_queue_next"
-                    android:textColor="@color/nv_on_surface_variant" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="6dp"
-                    android:text="@string/coming_soon_badge"
-                    android:textColor="@color/nv_primary"
-                    android:textSize="10sp" />
+                    android:textColor="@color/nv_on_surface" />
             </LinearLayout>
 
             <LinearLayout

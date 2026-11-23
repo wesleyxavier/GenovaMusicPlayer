@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nv_surface"
+    android:orientation="vertical">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_queue_collapse"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/cd_queue_collapse"
+            android:padding="12dp"
+            android:src="@drawable/ic_keyboard_arrow_down"
+            android:tint="@color/nv_on_surface" />
+
+        <TextView
+            style="@style/TextTitleLarge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="@string/queue_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_queue_total_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@drawable/bg_pill_surface"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:minWidth="36dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="0"
+            android:textColor="@color/nv_primary"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_queue_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_target_min"
+            android:layout_marginStart="6dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableStart="@drawable/ic_delete"
+            android:drawablePadding="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/queue_clear"
+            android:textAllCaps="false"
+            android:textColor="@color/nv_on_surface_variant"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Playback Origin & Shuffle Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_card_surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextLabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/queue_origin_label"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_queue_origin"
+                style="@style/TextTitleMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/queue_origin_library"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_queue_shuffle_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@drawable/bg_pill_surface"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/queue_shuffle_off"
+            android:textColor="@color/nv_on_surface_variant"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Active Track Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextLabelSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/queue_now_playing_header"
+            android:textColor="@color/nv_primary" />
+
+        <TextView
+            style="@style/TextLabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/queue_active_playback_badge"
+            android:textColor="@color/nv_on_surface_variant" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_queue_now_playing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_card_surface_high"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_queue_current_art"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_album_art_thumb"
+                android:clipToOutline="true"
+                android:contentDescription="@string/cd_track_art"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_music_note" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_queue_current_title"
+                    style="@style/TextTitleMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_queue_current_artist"
+                    style="@style/TextLabelSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/nv_on_surface_variant" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_queue_current_quality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_badge_hifi"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="6dp"
+                        android:paddingBottom="2dp"
+                        android:text="@string/badge_hifi"
+                        android:textColor="@color/nv_primary"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_queue_current_time"
+                        style="@style/TextLabelSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="00:00 / 00:00"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_queue_play_pause"
+                android:layout_width="@dimen/touch_target_min"
+                android:layout_height="@dimen/touch_target_min"
+                android:background="@drawable/bg_pill_primary"
+                android:contentDescription="@string/cd_play_pause"
+                android:padding="12dp"
+                android:src="@drawable/ic_pause"
+                android:tint="@color/nv_on_primary_container" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_queue_current"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:max="1000"
+            android:progressDrawable="@drawable/seekbar_progress" />
+    </LinearLayout>
+
+    <!-- Upcoming Header + Add Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextTitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/queue_upcoming_header" />
+
+            <TextView
+                android:id="@+id/tv_queue_remaining_summary"
+                style="@style/TextLabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 faixas restantes • 00:00" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_queue_add"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_target_min"
+            android:background="@drawable/bg_pill_surface"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/queue_add_button"
+            android:textAllCaps="false"
+            android:textColor="@color/nv_primary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Auto-play toggle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/touch_target_min"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_card_surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <TextView
+            style="@style/TextBodyMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/queue_autoplay_label"
+            android:textColor="@color/nv_on_surface"
+            android:textSize="13sp" />
+
+        <Switch
+            android:id="@+id/switch_queue_autoplay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/touch_target_min"
+            android:contentDescription="@string/queue_autoplay_label" />
+    </LinearLayout>
+
+    <!-- Empty Upcoming State -->
+    <TextView
+        android:id="@+id/tv_queue_empty"
+        style="@style/TextBodyMedium"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/queue_empty_upcoming"
+        android:visibility="gone" />
+
+    <!-- Upcoming Queue List -->
+    <ListView
+        android:id="@+id/list_queue_upcoming"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:divider="@color/nv_transparent"
+        android:dividerHeight="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <!-- Bottom Action Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/nv_surface_container_low"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <Button
+            android:id="@+id/btn_queue_save_playlist"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/touch_target_min"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pill_surface"
+            android:drawableStart="@drawable/ic_playlist_add"
+            android:drawablePadding="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/queue_save_playlist"
+            android:textAllCaps="false"
+            android:textColor="@color/nv_on_surface"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btn_queue_shuffle"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill_surface"
+            android:contentDescription="@string/cd_shuffle"
+            android:padding="12dp"
+            android:src="@drawable/ic_shuffle"
+            android:tint="@color/nv_on_surface_variant" />
+
+        <ImageButton
+            android:id="@+id/btn_queue_repeat"
+            android:layout_width="@dimen/touch_target_min"
+            android:layout_height="@dimen/touch_target_min"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_pill_surface"
+            android:contentDescription="@string/cd_repeat"
+            android:padding="12dp"
+            android:src="@drawable/ic_repeat"
+            android:tint="@color/nv_on_surface_variant" />
+    </LinearLayout>
+</LinearLayout>

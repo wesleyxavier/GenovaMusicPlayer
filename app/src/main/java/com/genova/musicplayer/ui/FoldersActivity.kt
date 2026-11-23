@@ -34,6 +34,7 @@ class FoldersActivity : Activity() {
     private lateinit var tvAudioUsage: TextView
     private lateinit var tvEmpty: TextView
     private lateinit var listFolders: ListView
+    private lateinit var miniPlayerController: MiniPlayerController
 
     private val ioExecutor = Executors.newSingleThreadExecutor()
     private val mainHandler = Handler(Looper.getMainLooper())
@@ -72,8 +73,19 @@ class FoldersActivity : Activity() {
         viewModel.onStateChanged = { state ->
             render(state)
         }
+        miniPlayerController = MiniPlayerController(this)
         viewModel.loadFolders()
         refreshDiagnostics()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        miniPlayerController.bind()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        miniPlayerController.unbind()
     }
 
     override fun onDestroy() {

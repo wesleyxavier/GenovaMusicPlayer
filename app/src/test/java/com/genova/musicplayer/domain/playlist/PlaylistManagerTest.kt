@@ -98,4 +98,58 @@ class PlaylistManagerTest {
         )
         assertEquals(listOf(10L, 30L), removed.affectedPlaylist.trackIds)
     }
+
+    @Test
+    fun `createPlaylist rejects names over 60 characters and supports pin and coverStyle`() {
+        val longName = "A".repeat(61)
+        assertIs<PlaylistValidationResult.NameTooLong>(
+            manager.createPlaylist(emptyList(), longName, "pl-1", 1000L)
+        )
+
+        val valid = assertIs<PlaylistValidationResult.Success>(
+            manager.createPlaylist(emptyList(), "A".repeat(60), "pl-2", 2000L, isPinned = true, coverStyle = 3)
+        )
+        assertEquals(true, valid.affectedPlaylist.isPinned)
+        assertEquals(3, valid.affectedPlaylist.coverStyle)
+    }
+
+    @Test
+    fun `sortAndFilter keeps pinned playlists first across all sort orders`() {
+        val list = listOf(
+            Playlist("1", "Zebra", 100L, trackIds = listOf(1L, 2L), isPinned = false),
+            Playlist("2", "Alpha", 200L, trackIds = emptyList(), isPinned = true),
+            Playlist("3", "Beta", 300L, trackIds = listOf(1L), isPinned = false)
+        )
+
+        val alpha = manager.sortAndFilter(list, "", PlaylistSortOrder.ALPHABETICAL)
+        assertEquals(listOf("2", "3", "1"), alpha.map { it.id })
+
+        val most = manager.sortAndFilter(list, "", PlaylistSortOrder.MOST_TRACKS)
+        assertEquals(listOf("2", "1", "3"), most.map { it.id })
+
+        val filtered = manager.sortAndFilter(list, "be", PlaylistSortOrder.RECENT)
+        assertEquals(listOf("3"), filtered.map { it.id })
+    }
+
+    @Test
+    fun `reorderTrack batch add and updateTrackMemberships work as expected`() {
+        val initial = listOf(
+            Playlist("1", "P1", 100L, trackIds = listOf(10L, 20L, 30L)),
+            Playlist("2", "P2", 200L, trackIds = listOf(10L))
+        )
+
+        val reordered = assertIs<PlaylistValidationResult.Success>(
+            manager.reorderTrack(initial, "1", fromIndex = 2, toIndex = 0)
+        )
+        assertEquals(listOf(30L, 10L, 20L), reordered.affectedPlaylist.trackIds)
+
+        val batchAdded = assertIs<PlaylistValidationResult.Success>(
+            manager.addTracksToPlaylist(reordered.playlists, "2", listOf(10L, 40L, 50L))
+        )
+        assertEquals(listOf(10L, 40L, 50L), batchAdded.playlists[1].trackIds)
+
+        val memberships = manager.updateTrackMemberships(batchAdded.playlists, trackId = 10L, selectedPlaylistIds = setOf("2"))
+        assertEquals(listOf(30L, 20L), memberships[0].trackIds)
+        assertEquals(listOf(10L, 40L, 50L), memberships[1].trackIds)
+    }
 }

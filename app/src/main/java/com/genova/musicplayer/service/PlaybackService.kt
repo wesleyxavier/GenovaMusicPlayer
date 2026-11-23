@@ -22,10 +22,14 @@ import android.os.Handler
 import android.os.IBinder
 import android.os.Looper
 import com.genova.musicplayer.R
+import com.genova.musicplayer.data.FolderPreferencesRepository
+import com.genova.musicplayer.data.MediaStoreTrackRepository
+import com.genova.musicplayer.data.TrackPlayStatsRepository
 import com.genova.musicplayer.domain.library.Track
 import com.genova.musicplayer.domain.player.PlayerStateStore
 import com.genova.musicplayer.domain.player.PlayerStatus
 import com.genova.musicplayer.ui.NowPlayingActivity
+import java.util.concurrent.Executors
 
 class PlaybackService : Service() {
 
@@ -36,6 +40,8 @@ class PlaybackService : Service() {
     private var audioFocusRequest: AudioFocusRequest? = null
     private var hasAudioFocus = false
     private var isForegroundStarted = false
+    private lateinit var statsRepository: TrackPlayStatsRepository
+    private val autoPlayExecutor = Executors.newSingleThreadExecutor()
 
     private val mainHandler = Handler(Looper.getMainLooper())
     private val progressTicker = object : Runnable {
@@ -83,6 +89,8 @@ class PlaybackService : Service() {
         super.onCreate()
         audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
         notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+        statsRepository = TrackPlayStatsRepository(this)
+        PlayerStateStore.setAutoPlayAfterQueue(statsRepository.isAutoPlayAfterQueueEnabled())
 
         createNotificationChannel()
         initMediaSession()
@@ -133,6 +141,7 @@ class PlaybackService : Service() {
         }
         releaseMediaPlayer()
         abandonAudioFocus()
+        autoPlayExecutor.shutdownNow()
         mediaSession.isActive = false
         mediaSession.release()
     }
@@ -177,6 +186,7 @@ class PlaybackService : Service() {
             setOnPreparedListener { mp ->
                 val duration = mp.duration.toLong().coerceAtLeast(track.durationMs)
                 mp.start()
+                statsRepository.incrementPlayCount(track.id)
                 PlayerStateStore.onPrepared(duration)
                 updateMediaSessionMetadata(track, duration)
                 updateMediaSessionPlaybackState(PlaybackState.STATE_PLAYING, 0L)
@@ -255,9 +265,14 @@ class PlaybackService : Service() {
     }
 
     private fun skipToNext(fromCompletion: Boolean) {
+        val state = PlayerStateStore.getState()
         val nextIndex = PlayerStateStore.resolveNextIndex(fromCompletion)
-        val list = PlayerStateStore.getState().activeList
+        val list = state.activeList
         if (nextIndex == null || nextIndex !in list.indices) {
+            if (fromCompletion && state.autoPlayAfterQueue) {
+                tryAutoPlayNextFromLibrary(state.currentTrack?.id)
+                return
+            }
             PlayerStateStore.onCompleted()
             updateMediaSessionPlaybackState(
                 PlaybackState.STATE_STOPPED,
@@ -266,8 +281,37 @@ class PlaybackService : Service() {
             updateNotification()
             return
         }
-        PlayerStateStore.startPreparing(list[nextIndex], list, nextIndex)
+        PlayerStateStore.playQueueIndex(nextIndex)
         playCurrentTrackFromStore()
+    }
+
+    private fun tryAutoPlayNextFromLibrary(currentTrackId: Long?) {
+        autoPlayExecutor.execute {
+            val folders = FolderPreferencesRepository(applicationContext).loadFolders()
+            val tracks = if (folders.isNotEmpty()) {
+                MediaStoreTrackRepository(contentResolver).queryTracks(folders)
+            } else {
+                emptyList()
+            }
+            val candidate = tracks.firstOrNull { it.id != currentTrackId } ?: tracks.firstOrNull()
+            mainHandler.post {
+                if (candidate != null) {
+                    val updated = PlayerStateStore.appendToQueue(listOf(candidate))
+                    val targetIdx = updated.activeList.lastIndex
+                    if (targetIdx in updated.activeList.indices) {
+                        PlayerStateStore.playQueueIndex(targetIdx)
+                        playCurrentTrackFromStore()
+                        return@post
+                    }
+                }
+                PlayerStateStore.onCompleted()
+                updateMediaSessionPlaybackState(
+                    PlaybackState.STATE_STOPPED,
+                    PlayerStateStore.getState().durationMs
+                )
+                updateNotification()
+            }
+        }
     }
 
     private fun skipToPrevious() {

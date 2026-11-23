@@ -11,17 +11,24 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - ./app/build/outputs/apk/debug:/apk:ro
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:4723/status').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 3s
+      timeout: 3s
+      retries: 15
 
   e2e-runner:
     build:
       context: ./e2e
       dockerfile: Dockerfile
     depends_on:
-      - appium
+      appium:
+        condition: service_healthy
     environment:
       - APPIUM_SERVER_URL=http://appium:4723
       - APP_PACKAGE=com.genova.musicplayer
       - APP_ACTIVITY=com.genova.musicplayer.ui.LibraryActivity
-      - APK_PATH=/apk/app-debug.apk
+      - ANDROID_ADB_SERVER_ADDRESS=host.docker.internal
+      - ANDROID_ADB_SERVER_PORT=5037
     volumes:
       - ./e2e:/e2e

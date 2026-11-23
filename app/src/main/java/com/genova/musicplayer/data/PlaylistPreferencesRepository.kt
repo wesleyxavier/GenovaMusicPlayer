@@ -19,6 +19,8 @@ class PlaylistPreferencesRepository(context: Context) {
                     val id = obj.optString(FIELD_ID).takeIf { it.isNotBlank() } ?: continue
                     val name = obj.optString(FIELD_NAME).takeIf { it.isNotBlank() } ?: continue
                     val createdAt = obj.optLong(FIELD_CREATED_AT, 0L)
+                    val isPinned = obj.optBoolean(FIELD_IS_PINNED, false)
+                    val coverStyle = obj.optInt(FIELD_COVER_STYLE, 0)
                     val trackIdsArray = obj.optJSONArray(FIELD_TRACK_IDS)
                     val trackIds = if (trackIdsArray != null) {
                         buildList(trackIdsArray.length()) {
@@ -34,7 +36,9 @@ class PlaylistPreferencesRepository(context: Context) {
                             id = id,
                             name = name,
                             createdAtEpochMs = createdAt,
-                            trackIds = trackIds
+                            trackIds = trackIds,
+                            isPinned = isPinned,
+                            coverStyle = coverStyle
                         )
                     )
                 }
@@ -54,6 +58,8 @@ class PlaylistPreferencesRepository(context: Context) {
                 put(FIELD_NAME, playlist.name)
                 put(FIELD_CREATED_AT, playlist.createdAtEpochMs)
                 put(FIELD_TRACK_IDS, trackArray)
+                put(FIELD_IS_PINNED, playlist.isPinned)
+                put(FIELD_COVER_STYLE, playlist.coverStyle)
             }
             array.put(obj)
         }
@@ -67,5 +73,7 @@ class PlaylistPreferencesRepository(context: Context) {
         private const val FIELD_NAME = "name"
         private const val FIELD_CREATED_AT = "createdAtEpochMs"
         private const val FIELD_TRACK_IDS = "trackIds"
+        private const val FIELD_IS_PINNED = "isPinned"
+        private const val FIELD_COVER_STYLE = "coverStyle"
     }
 }

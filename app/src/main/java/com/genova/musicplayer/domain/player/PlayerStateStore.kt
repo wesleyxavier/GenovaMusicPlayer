@@ -11,6 +11,7 @@ object PlayerStateStore {
 
     private val lock = Any()
     private val listeners = CopyOnWriteArraySet<(PlaybackSession) -> Unit>()
+    private val queueManager = PlaybackQueueManager()
 
     @Volatile
     private var session: PlaybackSession = PlaybackSession()
@@ -25,17 +26,62 @@ object PlayerStateStore {
         listeners.remove(listener)
     }
 
-    fun startPreparing(track: Track, activeList: List<Track>, index: Int) {
+    fun startPreparing(
+        track: Track,
+        activeList: List<Track>,
+        index: Int,
+        originLabel: String = "Biblioteca"
+    ) {
         updateSession { current ->
-            current.copy(
-                currentTrack = track,
-                activeList = activeList,
-                currentIndex = index,
-                status = PlayerStatus.PREPARING,
-                positionMs = 0L,
-                durationMs = track.durationMs,
-                errorMessage = null
-            )
+            val resolvedIndex = if (index in activeList.indices) index else activeList.indexOfFirst { it.id == track.id }
+            if (resolvedIndex in activeList.indices) {
+                queueManager.replaceQueue(current, activeList, resolvedIndex, originLabel)
+            } else {
+                queueManager.replaceQueue(current, listOf(track), 0, originLabel)
+            }
+        }
+    }
+
+    fun appendToQueue(tracks: List<Track>, fallbackOrigin: String = "Fila personalizada"): PlaybackSession {
+        return updateSession { current ->
+            queueManager.appendTracks(current, tracks, fallbackOrigin)
+        }
+    }
+
+    fun enqueueAsLastAndPlay(track: Track, fallbackOrigin: String = "Biblioteca"): PlaybackSession {
+        return updateSession { current ->
+            queueManager.enqueueAsLastAndPlay(current, track, fallbackOrigin)
+        }
+    }
+
+    fun removeFromQueue(index: Int): PlaybackSession {
+        return updateSession { current ->
+            queueManager.removeAt(current, index)
+        }
+    }
+
+    fun moveQueueItem(fromIndex: Int, toIndex: Int): PlaybackSession {
+        return updateSession { current ->
+            queueManager.moveItem(current, fromIndex, toIndex)
+        }
+    }
+
+    fun playQueueIndex(index: Int): PlaybackSession {
+        return updateSession { current ->
+            queueManager.selectIndex(current, index)
+        }
+    }
+
+    fun clearUpcomingQueue(): PlaybackSession {
+        return updateSession { current ->
+            queueManager.clearUpcoming(current)
+        }
+    }
+
+    fun setAutoPlayAfterQueue(enabled: Boolean) {
+        updateSession { current ->
+            if (current.autoPlayAfterQueue == enabled) current
+            else current.copy(autoPlayAfterQueue = enabled)
         }
     }
 
@@ -125,34 +171,11 @@ object PlayerStateStore {
     }
 
     fun resolveNextIndex(fromCompletion: Boolean, random: Random = Random.Default): Int? {
-        val current = session
-        val list = current.activeList
-        if (list.isEmpty()) return null
-        if (fromCompletion && current.repeatMode == RepeatMode.REPEAT_ONE) {
-            return current.currentIndex.takeIf { it in list.indices } ?: 0
-        }
-        if (current.isShuffleEnabled && list.size > 1) {
-            var candidate = random.nextInt(list.size)
-            if (candidate == current.currentIndex) {
-                candidate = (candidate + 1) % list.size
-            }
-            return candidate
-        }
-        val next = current.currentIndex + 1
-        return when {
-            next < list.size -> next
-            current.repeatMode == RepeatMode.REPEAT_ALL -> 0
-            !fromCompletion && list.isNotEmpty() -> 0
-            else -> null
-        }
+        return queueManager.resolveNextIndex(session, fromCompletion, random)
     }
 
     fun resolvePreviousIndex(): Int? {
-        val current = session
-        val list = current.activeList
-        if (list.isEmpty()) return null
-        val prev = current.currentIndex - 1
-        return if (prev >= 0) prev else list.lastIndex
+        return queueManager.resolvePreviousIndex(session)
     }
 
     fun reset() {

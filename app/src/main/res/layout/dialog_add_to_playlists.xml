@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nv_surface_container_high"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Track Header Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_surface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_add_playlist_track_art"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_album_art_thumb"
+            android:clipToOutline="true"
+            android:contentDescription="@null"
+            android:padding="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_note" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_add_playlist_track_title"
+                style="@style/TextTitleMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_add_playlist_track_artist"
+                style="@style/TextLabelSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_add_playlist_track_hifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_hifi"
+            android:paddingStart="6dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="2dp"
+            android:text="@string/badge_hifi"
+            android:textColor="@color/nv_primary"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Create New Playlist Shortcut -->
+    <LinearLayout
+        android:id="@+id/btn_add_playlist_create_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_card_surface"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:minHeight="52dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_pill_primary"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/ic_add"
+            android:tint="@color/nv_on_primary_container" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextTitleMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_playlist_new_title"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/TextLabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_playlist_new_subtitle"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_add_playlist_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/touch_target_min"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_pill_surface"
+        android:hint="@string/add_to_playlist_search_hint"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:singleLine="true"
+        android:textColor="@color/nv_on_surface"
+        android:textColorHint="@color/nv_outline"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/list_add_playlist_choices"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="10dp"
+        android:choiceMode="multipleChoice"
+        android:divider="@color/nv_transparent"
+        android:dividerHeight="4dp" />
+
+    <TextView
+        android:id="@+id/tv_add_playlist_selected_count"
+        style="@style/TextLabelSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/nv_primary" />
+</LinearLayout>

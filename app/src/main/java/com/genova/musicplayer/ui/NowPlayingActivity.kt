@@ -92,7 +92,7 @@ class NowPlayingActivity : Activity() {
         btnRepeat.setOnClickListener { dispatchServiceAction(PlaybackService.ACTION_CYCLE_REPEAT) }
 
         findViewById<View>(R.id.btn_queue_placeholder).setOnClickListener {
-            Toast.makeText(this, R.string.coming_soon_toast, Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, QueueActivity::class.java))
         }
         findViewById<View>(R.id.btn_lyrics_placeholder).setOnClickListener {
             Toast.makeText(this, R.string.coming_soon_toast, Toast.LENGTH_SHORT).show()

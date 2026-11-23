@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report
-- Version change: 1.0.1 -> 1.1.0
-- Modified principles: I (exceção isolada para dependências E2E em container), VI (logo oficial do APK)
-- Added guidance: Testes E2E com Appium (docker-compose.e2e.yml + execução obrigatória via subagentes appium-test-*) e diretriz de MCP do GitHub em AGENTS.md
+- Version change: 1.1.0 -> 1.2.0
+- Modified principles: III (Escopo Rígido do MVP — inclusão da Parte 3 com botão "Tocando Agora", mini-player persistente, fila de reprodução "Fila a seguir" e evolução das telas de playlists; remoção de fila de reprodução e mini-player da lista "Fora do MVP")
+- Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
 -->
@@ -32,7 +32,12 @@ O desenvolvimento DEVE respeitar estritamente o escopo definido para o MVP:
 
 - **Parte 1:** lista de músicas do aparelho, busca, tela "tocando agora", reprodução em segundo plano com controles na notificação e seleção de pastas.
 - **Parte 2:** playlists (criar, renomear, excluir, adicionar e remover músicas).
-- **Fora do MVP:** fila de reprodução, mini-player, letras, equalizador, Chromecast, temas e download de metadados online. Qualquer funcionalidade fora do MVP exige nova especificação aprovada antes de ser implementada.
+- **Parte 3:** evolução da reprodução e de playlists alinhada aos designs de referência em `docs/design/`:
+  - Botão/chip `"Tocando Agora"` na tela principal (`Músicas`) redirecionando para a tela `"Reproduzindo agora"` (`NowPlayingActivity`), mantendo a reprodução direta ao tocar em qualquer música na lista.
+  - Mini-player persistente na tela principal e nas abas principais de navegação, exibindo faixa ativa, controles rápidos e progresso, redirecionando para `"Reproduzindo agora"` ao tocar no card.
+  - Habilitação da subtela `"Fila a Seguir"` a partir de `"Reproduzindo agora"`, exibindo a faixa em execução e os próximos itens da fila, permitindo adicionar músicas e playlists à fila, remover itens, reordenar a fila, tocar diretamente em qualquer música da fila para iniciar sua reprodução, limpar a fila e salvar a fila como playlist.
+  - Melhorias de Playlists (visão geral, detalhes da playlist, criação e adição à playlist): busca e ordenação, alternância entre grade e lista, fixar playlist no topo, arte automática local ou das faixas, filtro interno e ordem manual/reordenação de faixas na playlist, seleção múltipla ao adicionar faixa em playlists e ação para adicionar playlist inteira à fila.
+- **Fora do MVP:** letras, equalizador, Chromecast, temas, download de metadados online, perfil/conta de usuário e sistema de favoritos. Qualquer funcionalidade fora do escopo autorizado exige nova especificação aprovada antes de ser implementada.
 
 ### IV. Biblioteca de Músicas e Regra de Hierarquia de Pastas
 
@@ -103,5 +108,6 @@ O código DEVE manter apenas o necessário para cumprir a especificação vigent
 - **2026-11-21 (v1.0.0):** Ratificação inicial da constituição do projeto pelo autor Wesley Xavier De Oliveira Monteiro.
 - **2026-11-22 (v1.0.1):** Esclarecimento no Princípio IV pelo autor: a regra de hierarquia de pastas permanece oculta na UI por padrão, exibindo aviso apenas quando houver tentativa inválida.
 - **2026-11-22 (v1.1.0):** Inclusão da obrigatoriedade de testes E2E com Appium em `docker-compose.e2e.yml` executados sempre pelos subagentes `appium-test-hydrogen` ou `appium-test-haiku` (com exceção isolada para dependências E2E em `e2e/`), obrigatoriedade do logo oficial do APK e diretriz de uso do MCP do GitHub em `AGENTS.md`.
+- **2026-11-23 (v1.2.0):** Inclusão da Parte 3 no escopo autorizado do Princípio III (botão `"Tocando Agora"`, mini-player persistente, subtela `"Fila a seguir"` com adição de músicas/playlists, remoção, reordenação e reprodução direta, e melhorias nas telas de playlists conforme `docs/design/`), por decisão explícita do autor.
 
-**Version**: 1.1.0 | **Ratified**: 2026-11-21 | **Last Amended**: 2026-11-22
+**Version**: 1.2.0 | **Ratified**: 2026-11-21 | **Last Amended**: 2026-11-23
