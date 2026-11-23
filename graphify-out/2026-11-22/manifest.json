@@ -1,512 +1,532 @@
 {
   ".specify/init-options.json": {
-    "mtime": 1795395471.3571408,
+    "mtime": 1795298660.4470842,
     "ast_hash": "998c2dfed6d4d7222872b752cc31fd8e",
     "semantic_hash": ""
   },
   ".specify/integration.json": {
-    "mtime": 1795395471.3576572,
+    "mtime": 1795298660.2433267,
     "ast_hash": "4a42ba29d4a545434f68f59f4cea4144",
     "semantic_hash": ""
   },
   ".specify/integrations/agy.manifest.json": {
-    "mtime": 1795395471.3581898,
+    "mtime": 1795298660.240322,
     "ast_hash": "f0b763ca443f2d5a3cdbc31417a7a7a9",
     "semantic_hash": ""
   },
   ".specify/integrations/speckit.manifest.json": {
-    "mtime": 1795395471.3581898,
+    "mtime": 1795298660.4305913,
     "ast_hash": "14df92cf51185220ff4d0c5f8d7a7fdb",
     "semantic_hash": ""
   },
   ".specify/memory/.constitution-template.json": {
-    "mtime": 1795395471.3587048,
-    "ast_hash": "a877b5d687ea5e2f12abb0e618b87b30",
+    "mtime": 1795298660.4510808,
+    "ast_hash": "7e3332a78cec1722b4351c6bf52dfc51",
     "semantic_hash": ""
   },
   ".specify/scripts/powershell/check-prerequisites.ps1": {
-    "mtime": 1795395471.3602488,
-    "ast_hash": "26530bbb7388956c0fc6e27fa08227f1",
+    "mtime": 1795298660.3341851,
+    "ast_hash": "14e6a9d0a49c8dee7276cb697e18d0d4",
     "semantic_hash": ""
   },
   ".specify/scripts/powershell/common.ps1": {
-    "mtime": 1795395471.3607664,
-    "ast_hash": "5186d40ab3e9e87f28395901adb31342",
+    "mtime": 1795298660.3461945,
+    "ast_hash": "712f742b334e58724521d95232f2b890",
     "semantic_hash": ""
   },
   ".specify/scripts/powershell/create-new-feature.ps1": {
-    "mtime": 1795395471.3612883,
-    "ast_hash": "ed07e3d6cbc67e647aceb703f0e1ebd0",
+    "mtime": 1795298660.3594143,
+    "ast_hash": "91871af950a45044d971fda64ece5f85",
     "semantic_hash": ""
   },
   ".specify/scripts/powershell/resolve-template.ps1": {
-    "mtime": 1795395471.3612883,
-    "ast_hash": "b3d684cb832b60f8e24f9bdb2c62407c",
+    "mtime": 1795298660.374497,
+    "ast_hash": "645ad018c6297df6e23949ac3e915749",
     "semantic_hash": ""
   },
   ".specify/scripts/powershell/setup-plan.ps1": {
-    "mtime": 1795395471.3618088,
-    "ast_hash": "39a0b50bdf75e0f1790a4ca73c432d36",
+    "mtime": 1795298660.379008,
+    "ast_hash": "d1fb3697610c8aa9ce97e00bcd073ae4",
     "semantic_hash": ""
   },
   ".specify/scripts/powershell/setup-tasks.ps1": {
-    "mtime": 1795395471.3623245,
-    "ast_hash": "02a9832e4c240c9ade2a3fd8f2da9b49",
+    "mtime": 1795298660.3835194,
+    "ast_hash": "9aa2f52ce7abece8476845b1f21a0ced",
     "semantic_hash": ""
   },
   ".specify/workflows/workflow-registry.json": {
-    "mtime": 1795395471.3654606,
+    "mtime": 1795298660.4450798,
     "ast_hash": "38ab0ac10a43062c2ebbb3b12f257e48",
     "semantic_hash": ""
   },
   "app/build.gradle.kts": {
-    "mtime": 1795395471.367019,
-    "ast_hash": "f013ff76f6e9321c838b680edb529e84",
+    "mtime": 1795305841.0474885,
+    "ast_hash": "7fb7f58a3e5337648721ab60fe7bf873",
     "semantic_hash": ""
   },
   "build.gradle.kts": {
-    "mtime": 1795395471.3936937,
-    "ast_hash": "7ab9ec9d969e005afa8f1f7a08d00f1e",
+    "mtime": 1795305880.046773,
+    "ast_hash": "b04c26d6c66ee76b7bd3f22fe3a52991",
     "semantic_hash": ""
   },
   "gradlew": {
-    "mtime": 1795395656.8780944,
+    "mtime": 1795305923.8510182,
     "ast_hash": "1db6d150e9a9442ca929c1fa8b2fd25e",
     "semantic_hash": ""
   },
   "settings.gradle.kts": {
-    "mtime": 1795395471.405433,
-    "ast_hash": "c164974f5580c663b801d0350587ebc5",
+    "mtime": 1795305822.4302156,
+    "ast_hash": "e41b7f6ea0df9f203273acf643c16c00",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-analyze/SKILL.md": {
-    "mtime": 1795395471.3363683,
-    "ast_hash": "a69bce78c959a08851f56aa776e71be5",
+    "mtime": 1795298660.1172981,
+    "ast_hash": "21b3a5f415b273ad9889fae6e7f90359",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-checklist/SKILL.md": {
-    "mtime": 1795395471.3363683,
-    "ast_hash": "1fc1a1a25f504836272c0ba3690595d1",
+    "mtime": 1795298660.1969535,
+    "ast_hash": "c88e51b77290e657aed75ea370b148d2",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-clarify/SKILL.md": {
-    "mtime": 1795395471.3373725,
-    "ast_hash": "2c579dad34f3739e610bdcd4eae657b9",
+    "mtime": 1795298660.131806,
+    "ast_hash": "b5a1fe315c3983b6a735de5d9f21d502",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-constitution/SKILL.md": {
-    "mtime": 1795395471.3383737,
-    "ast_hash": "d6a1634e92684fdf0bfef302c5419a87",
+    "mtime": 1795298660.1468134,
+    "ast_hash": "ab5af80b8ecf7b0f0c072ac100be6de5",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-converge/SKILL.md": {
-    "mtime": 1795395471.3383737,
-    "ast_hash": "e4b60b38d7c33d24083fc0f7ae939ffd",
+    "mtime": 1795298660.1723363,
+    "ast_hash": "c94eca77ba46236314a6996fc7514c6a",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-implement/SKILL.md": {
-    "mtime": 1795395471.3393717,
-    "ast_hash": "608c197a01be1a50b0c4a19643b1dadd",
+    "mtime": 1795298660.1600325,
+    "ast_hash": "291e745957ada55914bfae880178855b",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-plan/SKILL.md": {
-    "mtime": 1795395471.3403716,
-    "ast_hash": "295716642605b0af2a2cd4fce6f436de",
+    "mtime": 1795298660.1838768,
+    "ast_hash": "ef90182cf3d7c605eed3638da1d2f6ed",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-specify/SKILL.md": {
-    "mtime": 1795395471.3403716,
-    "ast_hash": "dfe307a15321f8b3c90874fb507910fe",
+    "mtime": 1795298660.2089834,
+    "ast_hash": "74c4d6d4ecb2b364c29e945e14430a23",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-tasks/SKILL.md": {
-    "mtime": 1795395471.3413723,
-    "ast_hash": "5959c5470df757795267d4beb6f559f7",
+    "mtime": 1795298660.2219927,
+    "ast_hash": "4b329e94b0ddfc0196c143e60d010ed7",
     "semantic_hash": ""
   },
   ".agents/skills/speckit-taskstoissues/SKILL.md": {
-    "mtime": 1795395471.3423717,
-    "ast_hash": "2f4d55167360033befce203f66973f8c",
+    "mtime": 1795298660.2333207,
+    "ast_hash": "96577080c0caccfc34faf28c836b539b",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-analyze/SKILL.md": {
-    "mtime": 1795395471.343578,
-    "ast_hash": "a69bce78c959a08851f56aa776e71be5",
+    "mtime": 1795298660.1172981,
+    "ast_hash": "21b3a5f415b273ad9889fae6e7f90359",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-checklist/SKILL.md": {
-    "mtime": 1795395471.344093,
-    "ast_hash": "1fc1a1a25f504836272c0ba3690595d1",
+    "mtime": 1795298660.1969535,
+    "ast_hash": "c88e51b77290e657aed75ea370b148d2",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-clarify/SKILL.md": {
-    "mtime": 1795395471.3451283,
-    "ast_hash": "2c579dad34f3739e610bdcd4eae657b9",
+    "mtime": 1795298660.131806,
+    "ast_hash": "b5a1fe315c3983b6a735de5d9f21d502",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-constitution/SKILL.md": {
-    "mtime": 1795395471.3456454,
-    "ast_hash": "d6a1634e92684fdf0bfef302c5419a87",
+    "mtime": 1795298660.1468134,
+    "ast_hash": "ab5af80b8ecf7b0f0c072ac100be6de5",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-converge/SKILL.md": {
-    "mtime": 1795395471.346162,
-    "ast_hash": "e4b60b38d7c33d24083fc0f7ae939ffd",
+    "mtime": 1795298660.1723363,
+    "ast_hash": "c94eca77ba46236314a6996fc7514c6a",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-implement/SKILL.md": {
-    "mtime": 1795395471.3466775,
-    "ast_hash": "608c197a01be1a50b0c4a19643b1dadd",
+    "mtime": 1795298660.1600325,
+    "ast_hash": "291e745957ada55914bfae880178855b",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-plan/SKILL.md": {
-    "mtime": 1795395471.347194,
-    "ast_hash": "295716642605b0af2a2cd4fce6f436de",
+    "mtime": 1795298660.1838768,
+    "ast_hash": "ef90182cf3d7c605eed3638da1d2f6ed",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-specify/SKILL.md": {
-    "mtime": 1795395471.3477483,
-    "ast_hash": "dfe307a15321f8b3c90874fb507910fe",
+    "mtime": 1795298660.2089834,
+    "ast_hash": "74c4d6d4ecb2b364c29e945e14430a23",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-tasks/SKILL.md": {
-    "mtime": 1795395471.3482683,
-    "ast_hash": "5959c5470df757795267d4beb6f559f7",
+    "mtime": 1795298660.2219927,
+    "ast_hash": "4b329e94b0ddfc0196c143e60d010ed7",
     "semantic_hash": ""
   },
   ".claude/skills/speckit-taskstoissues/SKILL.md": {
-    "mtime": 1795395471.3493018,
-    "ast_hash": "2f4d55167360033befce203f66973f8c",
+    "mtime": 1795298660.2333207,
+    "ast_hash": "96577080c0caccfc34faf28c836b539b",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-analyze/SKILL.md": {
-    "mtime": 1795395471.3498192,
-    "ast_hash": "a69bce78c959a08851f56aa776e71be5",
+    "mtime": 1795298660.1172981,
+    "ast_hash": "21b3a5f415b273ad9889fae6e7f90359",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-checklist/SKILL.md": {
-    "mtime": 1795395471.3503368,
-    "ast_hash": "1fc1a1a25f504836272c0ba3690595d1",
+    "mtime": 1795298660.1969535,
+    "ast_hash": "c88e51b77290e657aed75ea370b148d2",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-clarify/SKILL.md": {
-    "mtime": 1795395471.351373,
-    "ast_hash": "2c579dad34f3739e610bdcd4eae657b9",
+    "mtime": 1795298660.131806,
+    "ast_hash": "b5a1fe315c3983b6a735de5d9f21d502",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-constitution/SKILL.md": {
-    "mtime": 1795395471.3518813,
-    "ast_hash": "d6a1634e92684fdf0bfef302c5419a87",
+    "mtime": 1795298660.1468134,
+    "ast_hash": "ab5af80b8ecf7b0f0c072ac100be6de5",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-converge/SKILL.md": {
-    "mtime": 1795395471.3529148,
-    "ast_hash": "e4b60b38d7c33d24083fc0f7ae939ffd",
+    "mtime": 1795298660.1723363,
+    "ast_hash": "c94eca77ba46236314a6996fc7514c6a",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-implement/SKILL.md": {
-    "mtime": 1795395471.3534305,
-    "ast_hash": "608c197a01be1a50b0c4a19643b1dadd",
+    "mtime": 1795298660.1600325,
+    "ast_hash": "291e745957ada55914bfae880178855b",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-plan/SKILL.md": {
-    "mtime": 1795395471.353947,
-    "ast_hash": "295716642605b0af2a2cd4fce6f436de",
+    "mtime": 1795298660.1838768,
+    "ast_hash": "ef90182cf3d7c605eed3638da1d2f6ed",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-specify/SKILL.md": {
-    "mtime": 1795395471.354459,
-    "ast_hash": "dfe307a15321f8b3c90874fb507910fe",
+    "mtime": 1795298660.2089834,
+    "ast_hash": "74c4d6d4ecb2b364c29e945e14430a23",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-tasks/SKILL.md": {
-    "mtime": 1795395471.354974,
-    "ast_hash": "5959c5470df757795267d4beb6f559f7",
+    "mtime": 1795298660.2219927,
+    "ast_hash": "4b329e94b0ddfc0196c143e60d010ed7",
     "semantic_hash": ""
   },
   ".gemini/skills/speckit-taskstoissues/SKILL.md": {
-    "mtime": 1795395471.354974,
-    "ast_hash": "2f4d55167360033befce203f66973f8c",
+    "mtime": 1795298660.2333207,
+    "ast_hash": "96577080c0caccfc34faf28c836b539b",
     "semantic_hash": ""
   },
   ".specify/memory/constitution.md": {
-    "mtime": 1795367907.9447744,
-    "ast_hash": "8d533f4a39d0d8065832519c66df3c80",
+    "mtime": 1795396327.5509508,
+    "ast_hash": "7f5d80888babc01ba17b52ba74712494",
     "semantic_hash": ""
   },
   ".specify/templates/checklist-template.md": {
-    "mtime": 1795395471.3628733,
-    "ast_hash": "8aeeee8f1e06e06ecf6145473c61b56b",
+    "mtime": 1795298660.3950856,
+    "ast_hash": "5af23404f7e1314e93fab2bcfcfa5c23",
     "semantic_hash": ""
   },
   ".specify/templates/constitution-template.md": {
-    "mtime": 1795395471.3628733,
-    "ast_hash": "8667511ac346dad1c731438a3081aaa1",
+    "mtime": 1795298660.402085,
+    "ast_hash": "dcefb6b60e7cb3db2e966977b6f02f18",
     "semantic_hash": ""
   },
   ".specify/templates/plan-template.md": {
-    "mtime": 1795395471.36339,
-    "ast_hash": "9ed364791d12e5e96177cb83a44957d6",
+    "mtime": 1795298660.4060814,
+    "ast_hash": "311db0670c3d19d2f5b781de97529b79",
     "semantic_hash": ""
   },
   ".specify/templates/spec-template.md": {
-    "mtime": 1795395471.3639107,
-    "ast_hash": "593b5f4630b0a5bf7714c04861b45d8f",
+    "mtime": 1795298660.4145873,
+    "ast_hash": "45ac8538bc1220324c9f0d610145b53f",
     "semantic_hash": ""
   },
   ".specify/templates/tasks-template.md": {
-    "mtime": 1795395471.3644283,
-    "ast_hash": "0a5a0d55a634eb7178cd7c6d2aa0b0a7",
+    "mtime": 1795298660.4175909,
+    "ast_hash": "f8b4f62d384defa0a559bdbbaacb0540",
     "semantic_hash": ""
   },
   ".specify/workflows/speckit/workflow.yml": {
-    "mtime": 1795395471.3654606,
-    "ast_hash": "704a0fe70b8dc1e4af287367fdaf8157",
+    "mtime": 1795030202.8953037,
+    "ast_hash": "e85bd795c8a1bad1168a223eec732604",
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1795395471.3659847,
-    "ast_hash": "482ab4c4c05919ba9f0b93a5f15c9ddb",
+    "mtime": 1795307016.7713027,
+    "ast_hash": "1b6add02c203498980a9ef6c39905337",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1795395976.2102733,
-    "ast_hash": "5ce0bf92055b69dc71c4afb64a37e27f",
+    "mtime": 1795398396.854324,
+    "ast_hash": "566f74f753f53cb963f5f66d9cc5b777",
     "semantic_hash": ""
   },
   "specs/001-mvp-part1-player/checklists/requirements.md": {
-    "mtime": 1795395471.4064674,
-    "ast_hash": "67ebe9b7fe6af7e474884e2f29969ce8",
+    "mtime": 1795301399.6030085,
+    "ast_hash": "56633b62fba7773c26d5f1f69c7c8c46",
     "semantic_hash": ""
   },
   "specs/001-mvp-part1-player/contracts/ui-and-viewmodel-contracts.md": {
-    "mtime": 1795395471.4069922,
-    "ast_hash": "0c04e8ca46f95d76e811f2c1b36dbbf3",
+    "mtime": 1795301376.140295,
+    "ast_hash": "043ae6384776e1653ffdc4cd483b4c6e",
     "semantic_hash": ""
   },
   "specs/001-mvp-part1-player/data-model.md": {
-    "mtime": 1795395471.4075122,
-    "ast_hash": "39e24d086673d04a8b524350b605d5d3",
+    "mtime": 1795301375.0451553,
+    "ast_hash": "fb254738dfed8c88a87e64c5758c555c",
     "semantic_hash": ""
   },
   "specs/001-mvp-part1-player/plan.md": {
-    "mtime": 1795395471.408034,
-    "ast_hash": "fccc61c6341bdbd05f861f0d2e81eb43",
+    "mtime": 1795301399.6478891,
+    "ast_hash": "437606f2b98d811a0f4178e494d1e02a",
     "semantic_hash": ""
   },
   "specs/001-mvp-part1-player/quickstart.md": {
-    "mtime": 1795395471.408615,
-    "ast_hash": "9dbebce5d62716a8fec3e747b3d31cde",
+    "mtime": 1795301377.6900158,
+    "ast_hash": "ee8039a9b9e078e75fa850e84f7a7416",
     "semantic_hash": ""
   },
   "specs/001-mvp-part1-player/research.md": {
-    "mtime": 1795395471.409137,
-    "ast_hash": "2b0597b38bc246b6f665fd762a7f1389",
+    "mtime": 1795301373.7226298,
+    "ast_hash": "2eb17c8a3b41bcd4ff0b5374ce8be743",
     "semantic_hash": ""
   },
   "specs/001-mvp-part1-player/spec.md": {
-    "mtime": 1795395471.409655,
-    "ast_hash": "51ac2a0325084ff511cd10696c6255ca",
+    "mtime": 1795301399.7094796,
+    "ast_hash": "b1be1664b3fbbe880894cd051b6200a7",
     "semantic_hash": ""
   },
   "specs/001-mvp-part1-player/tasks.md": {
-    "mtime": 1795395471.409655,
+    "mtime": 1795367276.6171603,
     "ast_hash": "2738993fa3633958457980c07f8d40c6",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/data/AlbumArtCacheLoader.kt": {
-    "mtime": 1795395471.369113,
+    "mtime": 1795367276.5836222,
     "ast_hash": "3de7dfd098551a2e4b150b1aa6e5ecc5",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/data/FolderPreferencesRepository.kt": {
-    "mtime": 1795395471.369113,
+    "mtime": 1795367276.58414,
     "ast_hash": "6443ababe80347fe02c8d754cc1f1953",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/data/MediaStoreTrackRepository.kt": {
-    "mtime": 1795395471.3696382,
+    "mtime": 1795367276.5846553,
     "ast_hash": "2cc324f6eccb820389faa98f7958677c",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/folder/AuthorizedFolder.kt": {
-    "mtime": 1795395471.3706791,
+    "mtime": 1795367276.5857346,
     "ast_hash": "472d3bf5ebb5ce9fb846570be229c88c",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/folder/FolderHierarchyValidator.kt": {
-    "mtime": 1795395471.3711967,
+    "mtime": 1795367276.5857346,
     "ast_hash": "4d73c369b54be6e70b1a2ab3ffd33a59",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/folder/FolderPathNormalizer.kt": {
-    "mtime": 1795395471.3717144,
+    "mtime": 1795367276.5862556,
     "ast_hash": "e0d11497676ce015a262c059da8ecc5b",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/library/LibraryFilter.kt": {
-    "mtime": 1795395471.3722339,
+    "mtime": 1795367276.5868862,
     "ast_hash": "a7a3b99a7f584b99f60eede4b6d4f5df",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/library/Track.kt": {
-    "mtime": 1795395471.3727603,
+    "mtime": 1795367276.5874114,
     "ast_hash": "7998db924a99d34a35093b04e26b20c8",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/library/TrackFilterEngine.kt": {
-    "mtime": 1795395471.3727603,
+    "mtime": 1795367276.587932,
     "ast_hash": "1acd2ecd579f31f8f6b790871042816c",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/player/PlaybackSession.kt": {
-    "mtime": 1795395471.3732867,
+    "mtime": 1795367276.58845,
     "ast_hash": "a710b0ed80a809190a457d985aa39090",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/player/PlayerStateStore.kt": {
-    "mtime": 1795395471.3738096,
+    "mtime": 1795367276.58845,
     "ast_hash": "ee77aabe6cecb9df51b8e6cc1a444e7f",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/service/PlaybackService.kt": {
-    "mtime": 1795395471.3743367,
+    "mtime": 1795367276.58845,
     "ast_hash": "f0d7b696650e73cfbe260439f0d7e28e",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/FolderListAdapter.kt": {
-    "mtime": 1795395471.3748631,
+    "mtime": 1795367276.5894547,
     "ast_hash": "b8506c1860fc6b775a143c21f246809a",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/FoldersActivity.kt": {
-    "mtime": 1795395636.191561,
+    "mtime": 1795396327.55514,
     "ast_hash": "ad8920c89cf83193d767097a3f9c7281",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/LibraryActivity.kt": {
-    "mtime": 1795395975.8425498,
+    "mtime": 1795396327.5556655,
     "ast_hash": "d1c840297b3a87fb2c8a773665a7cae9",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/NowPlayingActivity.kt": {
-    "mtime": 1795395975.8677766,
+    "mtime": 1795396327.556191,
     "ast_hash": "330ae4cb776b84a6e4d49c17e9a677b7",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/TrackListAdapter.kt": {
-    "mtime": 1795395471.3769398,
+    "mtime": 1795367276.590454,
     "ast_hash": "4a7a14a61b79f8059aa86a6f5010b273",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/viewmodel/FoldersViewModel.kt": {
-    "mtime": 1795395471.3774579,
+    "mtime": 1795367276.591457,
     "ast_hash": "a3da321dfa1408d39a586e8cf179de46",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/viewmodel/LibraryViewModel.kt": {
-    "mtime": 1795395471.3774579,
+    "mtime": 1795367276.591457,
     "ast_hash": "d0d3d7dfc0c8cb4d34f902f191c6dd8d",
     "semantic_hash": ""
   },
   "app/src/test/java/com/genova/musicplayer/domain/folder/FolderHierarchyValidatorTest.kt": {
-    "mtime": 1795395471.3926933,
+    "mtime": 1795367276.606458,
     "ast_hash": "b29c80a25c00f7b5389d324ab9d54817",
     "semantic_hash": ""
   },
   "app/src/test/java/com/genova/musicplayer/domain/library/TrackFilterEngineTest.kt": {
-    "mtime": 1795395471.3936937,
+    "mtime": 1795367276.6075847,
     "ast_hash": "e1451c38eaea006df916f7aaa79a8e93",
     "semantic_hash": ""
   },
   "app/src/test/java/com/genova/musicplayer/domain/player/PlayerStateTransitionsTest.kt": {
-    "mtime": 1795395471.3936937,
+    "mtime": 1795367276.6075847,
     "ast_hash": "0b666fcb463dbb1f6d969216f447df0f",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/data/PlaylistPreferencesRepository.kt": {
-    "mtime": 1795395541.5482047,
-    "ast_hash": "d13afc38e8b48afdc16f41f534bcc88f",
+    "mtime": 1795396327.553038,
+    "ast_hash": "b3f3d5169452c3da400e6e803620ac73",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/playlist/Playlist.kt": {
-    "mtime": 1795395523.1796556,
-    "ast_hash": "367f9e313f3699afb3e44e182a7d3e2e",
+    "mtime": 1795396327.5540833,
+    "ast_hash": "4a5a0ff502679bf6e4af10e762beeb48",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/playlist/PlaylistManager.kt": {
-    "mtime": 1795395526.2036238,
-    "ast_hash": "a971abb8601ba03e452293ea2d92d09e",
+    "mtime": 1795396327.5540833,
+    "ast_hash": "905c90f4f9f9c0560baa05013818d338",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/domain/playlist/PlaylistValidationResult.kt": {
-    "mtime": 1795395524.6713853,
-    "ast_hash": "0ec9b566a93564ee1e9c452a8ad02d28",
+    "mtime": 1795396327.5546074,
+    "ast_hash": "bc138611d04c37ebf98a0936b13e74df",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/PlaylistDetailActivity.kt": {
-    "mtime": 1795395619.1549568,
-    "ast_hash": "289e5e9e95a572abb30ffd71d8e478c0",
+    "mtime": 1795396327.556712,
+    "ast_hash": "e0345ee4b117cb3fc1063b801a275200",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/PlaylistListAdapter.kt": {
-    "mtime": 1795395616.562683,
-    "ast_hash": "0a3c12d4003b6a47370d8e1dbf7a7bed",
+    "mtime": 1795396327.556712,
+    "ast_hash": "bc493536f874ca097e4264c83fa8b160",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/ui/PlaylistsActivity.kt": {
-    "mtime": 1795395617.80295,
-    "ast_hash": "258017dfeaee96d5d13239305cbf9cbc",
+    "mtime": 1795396327.5572226,
+    "ast_hash": "81334154c84de944181ebdc777d52ce1",
     "semantic_hash": ""
   },
   "app/src/main/java/com/genova/musicplayer/viewmodel/PlaylistsViewModel.kt": {
-    "mtime": 1795395543.1440983,
-    "ast_hash": "1b349dca256ac448f3c88951c359e25c",
+    "mtime": 1795396327.5582774,
+    "ast_hash": "7d7f2bbbbe09a36d43d247a2b3b75fbb",
     "semantic_hash": ""
   },
   "app/src/test/java/com/genova/musicplayer/domain/playlist/PlaylistManagerTest.kt": {
-    "mtime": 1795395527.678253,
-    "ast_hash": "b19fe9cd845c3344fd0e84ffa76d8766",
+    "mtime": 1795396327.5635607,
+    "ast_hash": "20915ec6cd33459a9c9b422f947c4668",
     "semantic_hash": ""
   },
   "specs/002-mvp-part2-playlists-and-refinements/checklists/requirements.md": {
-    "mtime": 1795368063.6911888,
-    "ast_hash": "0aaaddc70bebfaa221919d68c04346d1",
+    "mtime": 1795396327.5783043,
+    "ast_hash": "3b84ba0c32acc42130d1e3e2b72c4686",
     "semantic_hash": ""
   },
   "specs/002-mvp-part2-playlists-and-refinements/contracts/playlists-and-refinements-contracts.md": {
-    "mtime": 1795368112.2771342,
-    "ast_hash": "13d54562387a6a3dac1821c2cfa2f9b4",
+    "mtime": 1795396327.5788374,
+    "ast_hash": "f59bcc3b5f858418b157cf864fb0ebaf",
     "semantic_hash": ""
   },
   "specs/002-mvp-part2-playlists-and-refinements/data-model.md": {
-    "mtime": 1795368110.9755778,
-    "ast_hash": "61b3518bc5040360799b3b1842c38a6e",
+    "mtime": 1795396327.5798965,
+    "ast_hash": "6a231591830675d02b7319ae25f7f90a",
     "semantic_hash": ""
   },
   "specs/002-mvp-part2-playlists-and-refinements/plan.md": {
-    "mtime": 1795368143.2596688,
-    "ast_hash": "1d9c561d80d76fd2f4581d8747821d51",
+    "mtime": 1795396327.5809388,
+    "ast_hash": "8b73e25d6b85a347c44bdc37bcff5d3e",
     "semantic_hash": ""
   },
   "specs/002-mvp-part2-playlists-and-refinements/quickstart.md": {
-    "mtime": 1795368113.5362904,
-    "ast_hash": "5dcee5f8e082a2deb59ce1fae3983668",
+    "mtime": 1795396327.5809388,
+    "ast_hash": "54aff54d5adbbe86f11f3d7b9ca526b0",
     "semantic_hash": ""
   },
   "specs/002-mvp-part2-playlists-and-refinements/research.md": {
-    "mtime": 1795368109.7415946,
-    "ast_hash": "49437966a5cd1177d2c0d7514d3cd8c3",
+    "mtime": 1795396327.5814574,
+    "ast_hash": "a61b9f3902735a24306afd16acad4b6f",
     "semantic_hash": ""
   },
   "specs/002-mvp-part2-playlists-and-refinements/spec.md": {
-    "mtime": 1795368063.7227027,
-    "ast_hash": "828a31bb8cda826143c507e73b3e29df",
+    "mtime": 1795396327.5819752,
+    "ast_hash": "e3f7dde6d5a63ae76eac2ec24b80fcb8",
     "semantic_hash": ""
   },
   "specs/002-mvp-part2-playlists-and-refinements/tasks.md": {
-    "mtime": 1795395976.1826115,
-    "ast_hash": "542ceb6a30016cfacd8e249eabc8aeff",
+    "mtime": 1795396327.5824902,
+    "ast_hash": "c310b5ddabccbd0c5f7a6a61a2b733f9",
+    "semantic_hash": ""
+  },
+  ".specify/feature.json": {
+    "mtime": 1795367967.9991095,
+    "ast_hash": "6ad45689f504aa6ad9cdb98a221b119b",
+    "semantic_hash": ""
+  },
+  "docs/design/biblioteca_busca.png": {
+    "mtime": 1795300792.523689,
+    "ast_hash": "969e591a3bbc45138947dea38f7a3c9c",
+    "semantic_hash": ""
+  },
+  "docs/design/gerenciador_de_pastas.png": {
+    "mtime": 1795300792.5091627,
+    "ast_hash": "84c5da96b21b91c929fc254099cc33da",
+    "semantic_hash": ""
+  },
+  "docs/design/tocando_agora.png": {
+    "mtime": 1795300792.5381954,
+    "ast_hash": "ceaa3f06a21f70da6350093037419d80",
     "semantic_hash": ""
   }
 }

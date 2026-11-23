@@ -24,6 +24,8 @@ Oferecer navegação e reprodução local de músicas a partir de pastas explici
 3. Gerar APK de debug:
    `docker run --rm -v "${PWD}:/workspace" -w /workspace genova-music-player ./gradlew assembleDebug --no-daemon`
 4. Instalar `app/build/outputs/apk/debug/app-debug.apk` no dispositivo Android.
+5. Rodar testes E2E com Appium em container (via subagente `appium-test-hydrogen` ou `appium-test-haiku`):
+   `docker compose -f docker-compose.e2e.yml up --build --abort-on-container-exit`
 
 ## Regras de domínio
 - Pastas selecionadas via `ACTION_OPEN_DOCUMENT_TREE`, sem varredura global do armazenamento.

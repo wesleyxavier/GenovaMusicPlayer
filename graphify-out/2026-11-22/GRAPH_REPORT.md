@@ -1,16 +1,16 @@
-# Graph Report - 002-mvp-part2-playlists-and-refinements  (2026-11-22)
+# Graph Report - GenovaMusicPlayer  (2026-11-22)
 
 ## Corpus Check
-- 101 files · ~91,455 words
+- 102 files · ~130,009 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1019 nodes · 1275 edges · 81 communities (77 shown, 4 thin omitted)
+- 1020 nodes · 1276 edges · 81 communities (77 shown, 4 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b3a48567`
+- Built from commit: `d02b0094`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -157,7 +157,7 @@ Nodes (13): Find-SpecifyRoot(), Format-SpecKitCommand(), Get-CurrentBranch(), Ge
 
 ### Community 9 - "GenovaMusicPlayer — Instruções para Agentes de IA"
 Cohesion: 0.12
-Nodes (14): Comandos, Convenções, Fluxo de especificação, GenovaMusicPlayer — Instruções para Agentes de IA, Propósito, Regras de operação, Restrições, Stack (+6 more)
+Nodes (15): Comandos, Convenções, Fluxo de especificação, GenovaMusicPlayer — Instruções para Agentes de IA, Propósito, Regras de operação, Restrições, Stack (+7 more)
 
 ### Community 10 - "Core Principles"
 Cohesion: 0.14
@@ -312,8 +312,8 @@ Cohesion: 0.83
 Nodes (3): gradlew script, die(), warn()
 
 ### Community 55 - "LibraryActivity"
-Cohesion: 0.07
-Nodes (23): LibraryFilter, Activity, Boolean, Bundle, Button, ImageButton, Int, Intent (+15 more)
+Cohesion: 0.06
+Nodes (25): LibraryFilter, Activity, Boolean, Bundle, Button, ImageButton, Int, Intent (+17 more)
 
 ### Community 56 - "PlaybackService"
 Cohesion: 0.11
@@ -336,8 +336,8 @@ Cohesion: 0.19
 Nodes (8): FoldersActivity, Activity, Boolean, Bundle, Int, Intent, ListView, TextView
 
 ### Community 61 - "TrackListAdapter"
-Cohesion: 0.05
-Nodes (30): deriveHiFi(), Boolean, Int, String, Track, List, String, TrackFilterEngine (+22 more)
+Cohesion: 0.06
+Nodes (28): deriveHiFi(), Boolean, Int, String, Track, List, String, TrackFilterEngine (+20 more)
 
 ### Community 62 - ".addFolder"
 Cohesion: 0.22
@@ -400,7 +400,7 @@ Cohesion: 0.40
 Nodes (4): 1. Refinamentos nas Telas Existentes, 2. Novas Telas e Contratos de Playlists, 3. Contratos Internos, UI & Architecture Contracts: MVP Parte 2 — Playlists e Refinamentos
 
 ## Knowledge Gaps
-- **442 isolated node(s):** `PlayerStatus`, `User Input`, `Pre-Execution Checks`, `Goal`, `Operating Constraints` (+437 more)
+- **443 isolated node(s):** `PlayerStatus`, `User Input`, `Pre-Execution Checks`, `Goal`, `Operating Constraints` (+438 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -416,7 +416,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 4 inferred relationships involving `Playlist` (e.g. with `.`addTrackToPlaylist avoids duplicates and removeTrackFromPlaylist preserves order`()` and `.`createPlaylist rejects duplicate name ignoring case and whitespace`()`) actually correct?**
   _`Playlist` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `PlayerStatus`, `User Input`, `Pre-Execution Checks` to the rest of the system?**
-  _442 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _443 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Tasks: [FEATURE NAME]` be split into smaller, more focused modules?**
   _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `SKILL.md` be split into smaller, more focused modules?**
